@@ -2,7 +2,7 @@
 /**
  * Plugin Name: SaaS Profile & Lead Engine
  * Plugin URI: https://yourdomain.com
- * Description: A complete SaaS system for Link-in-Bio, Digital Business Cards, and Lead Generation.
+ * Description: A complete SaaS system for Digital Identity Center, Digital Business Cards, and Lead Generation.
  * Version: 1.0.0
  * Author: Elite SaaS Architect
  * License: GPL2

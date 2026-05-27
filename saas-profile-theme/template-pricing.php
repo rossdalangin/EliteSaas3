@@ -13,16 +13,16 @@ $plans = json_decode($pricing_json, true);
 if (!$plans) {
     $plans = [
         [
-            'name' => 'Free', 'price' => '$0', 'period' => 'forever', 'cta' => 'Join for Free', 'link' => '/register', 'style' => 'light',
+            'name' => 'Foundational', 'price' => '$0', 'period' => 'forever', 'cta' => 'Claim Your Identity', 'link' => '/register', 'style' => 'light',
             'features' => ['1 Authority Engine', 'Standard Blocks', 'Basic Analytics', 'Community Support']
         ],
         [
-            'name' => 'Elite Pro', 'price' => '$19', 'period' => '/mo', 'cta' => 'Upgrade to Pro', 'link' => '/register?plan=pro', 'style' => 'featured', 'badge' => 'MOST POPULAR',
-            'features' => ['Everything in Free', 'Unlimited Premium Blocks', 'Lead Generation CRM', 'Custom Domain Mapping', 'Priority Support']
+            'name' => 'Elite Command', 'price' => '$19', 'period' => '/mo', 'cta' => 'Invest in Authority', 'link' => '/register?plan=pro', 'style' => 'featured', 'badge' => 'FOR THE ELITE 1%',
+            'features' => ['Everything in Foundational', 'Unlimited Premium Blocks', 'Lead Generation CRM', 'Custom Domain Mapping', 'Priority Support']
         ],
         [
-            'name' => 'Agency Unlimited', 'price' => '$49', 'period' => '/mo', 'cta' => 'Go Unlimited', 'link' => '/register?plan=agency', 'style' => 'light',
-            'features' => ['Everything in Pro', 'Unlimited Sub-accounts', 'API Access', 'White-label Client Funnels', 'Dedicated Manager']
+            'name' => 'Empire Scale', 'price' => '$49', 'period' => '/mo', 'cta' => 'Scale Your Empire', 'link' => '/register?plan=agency', 'style' => 'light',
+            'features' => ['Everything in Elite Command', 'Unlimited Sub-accounts', 'API Access', 'White-label Client Funnels', 'Dedicated Manager']
         ]
     ];
 }

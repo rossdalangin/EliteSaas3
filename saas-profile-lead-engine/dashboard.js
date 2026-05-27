@@ -47,7 +47,7 @@
             if ($(this).hasClass('pro-gated-inline') && !$(e.target).is('input, select, textarea')) return;
             e.preventDefault();
             e.stopPropagation();
-            if (confirm('This feature is only available for Elite Pro users. Would you like to view our Pro plans?')) {
+            if (confirm('This feature is only available for Elite Command users. Would you like to view our upgrade plans?')) {
                 switchTab('billing');
             }
         });

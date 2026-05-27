@@ -68,10 +68,10 @@ class Saas_Dashboard {
         $meta = saas_get_profile_meta( $profile_id );
         $is_pro = saas_is_profile_licensed($profile_id);
 
-        // Nudge for intended Pro/Agency users
+        // Nudge for intended Elite/Empire users
         $target_plan = get_user_meta($user_id, '_saas_registration_target_plan', true);
         if ( ! $is_pro && in_array($target_plan, ['pro', 'agency']) ) {
-            $plan_label = ($target_plan === 'agency') ? 'Agency Unlimited' : 'Elite Pro';
+            $plan_label = ($target_plan === 'agency') ? 'Empire Scale' : 'Elite Command';
             echo '<div class="saas-onboarding-card dashboard-card bg-accent mb-20 border-none">
                 <div class="flex-between flex-center">
                     <p class="mb-0 font-bold color-white">🌟 Ready to complete your '. $plan_label .' upgrade? Unlock all features now.</p>
@@ -118,7 +118,7 @@ class Saas_Dashboard {
                     <div class="saas-onboarding-card dashboard-card mb-0">
                         <div class="flex-between flex-center flex-wrap gap-15">
                             <div>
-                                <h4 class="mb-0">🚀 Get Started Checklist</h4>
+                                <h4 class="mb-0">🚀 Deploy Command Center Checklist</h4>
                                 <div class="flex gap-15 mt-8 text-sm flex-wrap">
                                     <span><?php echo $meta['headline'] ? '[✓]' : '[ ]'; ?> Bio</span>
                                     <span><?php echo count($links) > 0 ? '[✓]' : '[ ]'; ?> Blocks</span>
@@ -732,7 +732,7 @@ class Saas_Dashboard {
                 <div id="tab-custom_css" class="saas-tab-content">
                     <div class="dashboard-card">
                         <h3>✨ Custom CSS</h3>
-                        <p class="field-hint">Add your own CSS to override any part of the theme. This feature allows for 100% brand alignment and is exclusive to Elite Pro users.</p>
+                        <p class="field-hint">Add your own CSS to override any part of the theme. This feature allows for 100% brand alignment and is exclusive to Elite Command users.</p>
 
                         <form id="saas-custom-css-form">
                             <input type="hidden" name="profile_id" value="<?php echo $profile_id; ?>">
@@ -952,7 +952,7 @@ class Saas_Dashboard {
                             <button class="button" onclick="window.print()">🖨️ Print Card</button>
                         </div>
                         <hr>
-                        <h4>Social Story Card (Elite Pro)</h4>
+                        <h4>Social Story Card (Elite Command)</h4>
                         <div id="saas-story-card-preview" class="story-card-preview mx-auto mb-20 relative p-30 color-white overflow-hidden flex-column" style="background:linear-gradient(135deg, <?php echo $meta['theme_color']; ?> 0%, #000 100%);">
                              <div class="text-center">
                                  <?php if ( has_post_thumbnail( $profile_id ) ) : ?>
@@ -977,7 +977,7 @@ class Saas_Dashboard {
                 <div id="tab-tracking" class="saas-tab-content">
                     <div class="dashboard-card">
                         <h3>Tracking & Pixels</h3>
-                        <p class="text-sm color-muted mb-20">Add Google Analytics, Facebook Pixel, or custom tracking scripts. (Elite Pro Feature)</p>
+                        <p class="text-sm color-muted mb-20">Add Google Analytics, Facebook Pixel, or custom tracking scripts. (Elite Command Feature)</p>
                         <form id="saas-tracking-form">
                             <input type="hidden" name="profile_id" value="<?php echo $profile_id; ?>">
                             <input type="hidden" name="form_context" value="tracking">
@@ -1236,7 +1236,7 @@ class Saas_Dashboard {
                                 <thead><tr><th>User</th><th>Joined</th><th>Plan</th></tr></thead>
                                 <tbody>
                                     <?php foreach($referred_users as $ru) :
-                                        $u_plan = get_user_meta($ru->ID, '_saas_subscription_plan', true) ?: 'Free';
+                                        $u_plan = get_user_meta($ru->ID, '_saas_subscription_plan', true) ?: 'Foundational';
                                         ?>
                                         <tr><td><?php echo esc_html($ru->display_name); ?></td><td><?php echo date('M j, Y', strtotime($ru->user_registered)); ?></td><td><?php echo ucfirst($u_plan); ?></td></tr>
                                     <?php endforeach; ?>
@@ -1333,7 +1333,7 @@ class Saas_Dashboard {
                             <div class="text-5xl">👑</div>
                             <div class="flex-1 min-w-300">
                                 <h3 class="mb-0 color-primary">Ready to Join the Elite 1%?</h3>
-                                <p class="mt-10-0-0 color-dark lh-1-6">As a consultant, your time is your most valuable asset. Stop wasting it managing fragmented links. Upgrade to <strong>Elite Pro</strong> to unlock advanced lead capture, whitelabeling, and smart routing.</p>
+                                <p class="mt-10-0-0 color-dark lh-1-6">As a consultant, your time is your most valuable asset. Stop wasting it managing fragmented links. Upgrade to <strong>Elite Command</strong> to unlock advanced lead capture, whitelabeling, and smart routing.</p>
                             </div>
                             <div class="flex-shrink-0">
                                 <button class="btn-primary" onclick="window.scrollTo({top: document.getElementById('plans-anchor').offsetTop, behavior: 'smooth'})">See Pro Benefits ↓</button>

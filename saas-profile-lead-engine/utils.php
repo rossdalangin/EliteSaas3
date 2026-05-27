@@ -186,7 +186,7 @@ function saas_get_default_templates() {
             'color' => '#4f46e5', 'theme' => 'modern-glass', 'shadow' => 'soft',
             'bg_type' => 'gradient', 'bg_color' => '#eef2ff', 'bg_gradient' => 'linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%)',
             'links' => [
-                ['title' => '👉 Free Strategy Session', 'url' => '#', 'type' => 'button', 'style' => 'featured'],
+                ['title' => '👉 Foundational Strategy Session', 'url' => '#', 'type' => 'button', 'style' => 'featured'],
                 ['title' => 'Watch Case Study', 'url' => 'https://youtube.com', 'type' => 'video'],
                 ['title' => 'Client Success Stories', 'url' => '#', 'type' => 'testimonial', 'extra' => 'Working with Alex was the best decision for my agency.'],
                 ['title' => 'Consulting Packages', 'url' => '#', 'type' => 'pricing', 'extra' => "$2,500/mo\nBi-weekly Calls\nSlack Support\nResource Library"],
@@ -221,7 +221,7 @@ function saas_get_default_templates() {
             'color' => '#10b981', 'theme' => 'light', 'shadow' => 'soft',
             'bg_type' => 'gradient', 'bg_color' => '#f0fdf4', 'bg_gradient' => 'linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%)',
             'links' => [
-                ['title' => 'Free Meditation Session', 'url' => '#', 'type' => 'button', 'style' => 'glow'],
+                ['title' => 'Foundational Meditation Session', 'url' => '#', 'type' => 'button', 'style' => 'glow'],
                 ['title' => 'Wellness Retreats', 'url' => '#', 'type' => 'pricing', 'extra' => "$1,500+\n3 Days / 2 Nights\nAll Inclusive\nPersonalized Plan"],
                 ['title' => 'Client Success Story', 'url' => '#', 'type' => 'testimonial', 'extra' => 'I feel more balanced and energized than ever!'],
             ]
@@ -243,7 +243,7 @@ function saas_get_default_templates() {
             'color' => '#4f46e5', 'theme' => 'dark', 'shadow' => 'soft',
             'bg_type' => 'flat', 'bg_color' => '#0f172a',
             'links' => [
-                ['title' => 'Get a Free Quote', 'url' => '#', 'type' => 'lead_form'],
+                ['title' => 'Get a Foundational Quote', 'url' => '#', 'type' => 'lead_form'],
                 ['title' => 'Our Pricing Models', 'url' => '#', 'type' => 'pricing', 'extra' => "$2,500+\nFull CRM Sync\nScale Strategy"],
                 ['title' => 'Latest Campaign Results', 'url' => '#', 'type' => 'video'],
             ]
@@ -266,7 +266,7 @@ function saas_get_default_templates() {
             'color' => '#6366f1', 'theme' => 'midnight-neon', 'shadow' => 'soft',
             'bg_type' => 'mesh', 'bg_color' => '#020617',
             'links' => [
-                ['title' => 'Start Your Free Trial', 'url' => '#', 'type' => 'button', 'style' => 'glow'],
+                ['title' => 'Start Your Foundational Trial', 'url' => '#', 'type' => 'button', 'style' => 'glow'],
                 ['title' => 'Watch Product Demo', 'url' => 'https://youtube.com', 'type' => 'video'],
                 ['title' => 'Enterprise Pricing', 'url' => '#', 'type' => 'pricing', 'extra' => "$499/mo\nSSO Support\nDedicated Account Manager\n99.9% SLA"],
                 ['title' => 'Technical Documentation', 'url' => '#', 'type' => 'button'],
@@ -279,7 +279,7 @@ function saas_get_default_templates() {
             'bg_type' => 'flat', 'bg_color' => '#ffffff',
             'links' => [
                 ['title' => 'Apply for 1-on-1 Coaching', 'url' => '#', 'type' => 'lead_form'],
-                ['title' => 'Free 7-Day Meal Plan', 'url' => '#', 'type' => 'button', 'style' => 'featured'],
+                ['title' => 'Foundational 7-Day Meal Plan', 'url' => '#', 'type' => 'button', 'style' => 'featured'],
                 ['title' => 'Transformation Gallery', 'url' => '#', 'type' => 'image_gallery', 'extra' => "https://via.placeholder.com/400?text=Result+1\nhttps://via.placeholder.com/400?text=Result+2"],
                 ['title' => 'Client Success Log', 'url' => '#', 'type' => 'milestone', 'extra' => 'Lbs Lost:4,200+'],
             ]
@@ -420,7 +420,7 @@ function saas_get_default_templates() {
             'links' => [
                 ['title' => 'Enroll in Masterclass', 'url' => '#', 'type' => 'button', 'style' => 'featured'],
                 ['title' => 'Course Curriculum', 'url' => '#', 'type' => 'pricing', 'extra' => "12 Modules\nWeekly Group Coaching\nPrivate Community\nLifetime Access"],
-                ['title' => 'Free 5-Day Mini-Course', 'url' => '#', 'type' => 'lead_form'],
+                ['title' => 'Foundational 5-Day Mini-Course', 'url' => '#', 'type' => 'lead_form'],
             ]
         ],
         'shop' => [
@@ -640,7 +640,7 @@ function saas_get_default_templates() {
             'color' => '#18181b', 'theme' => 'dark', 'shadow' => 'hard',
             'bg_type' => 'flat', 'bg_color' => '#09090b',
             'links' => [
-                ['title' => 'Claim Free 7-Day Pass', 'url' => '#', 'type' => 'lead_form'],
+                ['title' => 'Claim Foundational 7-Day Pass', 'url' => '#', 'type' => 'lead_form'],
                 ['title' => 'Membership Plans', 'url' => '#', 'type' => 'pricing', 'extra' => "$49/mo\nAll Classes\nSauna Access"],
                 ['title' => 'Virtual Gym Tour', 'url' => 'https://youtube.com', 'type' => 'video'],
             ]

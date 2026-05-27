@@ -46,7 +46,7 @@ function saas_ajax_add_link() {
     $pro_only_blocks = ['image_gallery', 'newsletter', 'calendar', 'countdown', 'product'];
     $payments = new Saas_Payments();
     if (in_array($type, $pro_only_blocks) && !$payments->is_pro_user(get_current_user_id())) {
-        wp_send_json_error('This block type is reserved for Elite Pro or Agency users.');
+        wp_send_json_error('This block type is reserved for Elite Command or Empire Scale users.');
     }
 
     // Verify ownership of the target profile
@@ -822,7 +822,7 @@ function saas_ajax_create_profile() {
     $payments = new Saas_Payments();
     $existing = get_posts(['post_type' => 'saas_profile', 'author' => $user_id, 'numberposts' => -1, 'post_status' => 'any']);
     if ( count($existing) >= 1 && !$payments->is_pro_user($user_id) ) {
-        wp_send_json_error( 'Free users are limited to 1 profile. Upgrade to Pro for unlimited profiles.' );
+        wp_send_json_error( 'Foundational tier users are limited to 1 profile. Invest in Authority for unlimited profiles.' );
     }
 
     $title = sanitize_text_field( $_POST['profile_title'] );
@@ -883,7 +883,7 @@ function saas_ajax_generate_samples() {
                 ['t' => 'Client Breakthrough', 'u' => '#', 'type' => 'testimonial', 'extra' => "Tony's strategies changed my business and my life forever. I am a different person."],
                 ['t' => 'Success Milestone', 'u' => '#', 'type' => 'milestone', 'extra' => "Global Impact:50M+"],
                 ['t' => 'Common Questions', 'u' => '#', 'type' => 'faq', 'extra' => "Is this for beginners?:Yes, we have programs for all levels.\nWhat is the guarantee?:We offer a 100% satisfaction guarantee."],
-                ['t' => 'Free Strategy Call', 'u' => '#', 'type' => 'calendar'],
+                ['t' => 'Foundational Strategy Call', 'u' => '#', 'type' => 'calendar'],
                 ['t' => 'Get Daily Motivation', 'u' => '#', 'type' => 'newsletter'],
             ]
         ],
@@ -1272,12 +1272,12 @@ function saas_ajax_simulate_pro_upgrade() {
     // Optionally create a mock license post
     wp_insert_post([
         'post_type'   => 'saas_license',
-        'post_title'  => 'Simulated Pro License for ' . wp_get_current_user()->display_name,
+        'post_title'  => 'Simulated Elite Command License for ' . wp_get_current_user()->display_name,
         'post_status' => 'publish',
         'post_author' => $user_id,
     ]);
 
-    wp_send_json_success('Successfully upgraded to Pro! Welcome to the Elite club. 🚀');
+    wp_send_json_success('Successfully upgraded to Elite Command! Welcome to the Elite club. 🚀');
 }
 
 // 20. AJAX: Apply Coupon
@@ -1529,7 +1529,7 @@ function saas_ajax_clone_profile() {
     $payments = new Saas_Payments();
     $existing = get_posts(['post_type' => 'saas_profile', 'author' => $user_id, 'numberposts' => -1, 'post_status' => 'any']);
     if ( count($existing) >= 1 && !$payments->is_pro_user($user_id) ) {
-        wp_send_json_error( 'Free users are limited to 1 profile. Upgrade to Pro to clone.' );
+        wp_send_json_error( 'Foundational tier users are limited to 1 profile. Invest in Authority to clone.' );
     }
 
     // 2. Clone Profile Post

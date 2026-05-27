@@ -152,7 +152,7 @@ $global_contrast = saas_get_contrast_color($bg_color);
     </header>
 
     <?php
-    // Featured Component (Elite Pro Feature)
+    // Featured Component (Elite Command Feature)
     $featured_video = get_post_meta($profile_id, '_saas_featured_video', true);
     if ($is_pro && $featured_video) : ?>
         <div class="featured-media-wrapper mb-40 animate-fadein">
@@ -414,7 +414,7 @@ $global_contrast = saas_get_contrast_color($bg_color);
         </a>
     </div>
 
-    <!-- FOMO Activity Popups (Elite Pro) -->
+    <!-- FOMO Activity Popups (Elite Command) -->
     <?php
     $fomo_enabled = get_post_meta($profile_id, '_saas_fomo_popups', true);
     if ($is_pro && $fomo_enabled) :

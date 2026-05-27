@@ -6,9 +6,9 @@
 get_header(); ?>
 
 <?php
-$h_title = get_option('saas_home_title') ?: 'Launch your digital identity in 60 seconds.';
+$h_title = get_option('saas_home_title') ?: 'Deploy Your Elite Command Center in 60 Seconds.';
 $h_hero  = get_option('saas_home_hero') ?: 'Combine your link-in-bio, business card, and lead magnets into one high-performance page.';
-$h_cta   = get_option('saas_home_cta') ?: 'Get Started Free';
+$h_cta   = get_option('saas_home_cta') ?: 'Deploy Command Center';
 $h_img   = get_option('saas_home_image');
 ?>
 
@@ -326,21 +326,21 @@ if ($comparison_json) : ?>
             $pricing_json = get_option('saas_home_pricing_json');
             $plans = json_decode($pricing_json, true) ?: [
                 [
-                    'name' => 'Free', 'price' => '$0', 'period' => 'forever', 'cta' => 'Join for Free', 'link' => '/register', 'style' => 'light',
+                    'name' => 'Foundational', 'price' => '$0', 'period' => 'forever', 'cta' => 'Claim Your Identity', 'link' => '/register', 'style' => 'light',
                     'features' => ['1 Profile', 'Standard Blocks', 'Basic Analytics', 'Community Support']
                 ],
                 [
-                    'name' => 'Elite Pro', 'price' => '$19', 'period' => '/mo', 'cta' => 'Upgrade to Pro', 'link' => '/register?plan=pro', 'style' => 'featured', 'badge' => 'FOR THE ELITE 1%',
-                    'features' => ['Everything in Free', 'Unlimited Premium Blocks', 'Lead Generation CRM', 'Custom Domain Mapping', 'Priority Support']
+                    'name' => 'Elite Command', 'price' => '$19', 'period' => '/mo', 'cta' => 'Invest in Authority', 'link' => '/register?plan=pro', 'style' => 'featured', 'badge' => 'FOR THE ELITE 1%',
+                    'features' => ['Everything in Foundational', 'Unlimited Premium Blocks', 'Lead Generation CRM', 'Custom Domain Mapping', 'Priority Support']
                 ],
                 [
-                    'name' => 'Agency Unlimited', 'price' => '$49', 'period' => '/mo', 'cta' => 'Go Unlimited', 'link' => '/register?plan=agency', 'style' => 'light',
-                    'features' => ['Everything in Pro', 'Unlimited Sub-accounts', 'API Access', 'White-label Client Funnels', 'Dedicated Manager']
+                    'name' => 'Empire Scale', 'price' => '$49', 'period' => '/mo', 'cta' => 'Scale Your Empire', 'link' => '/register?plan=agency', 'style' => 'light',
+                    'features' => ['Everything in Elite Command', 'Unlimited Sub-accounts', 'API Access', 'White-label Client Funnels', 'Dedicated Manager']
                 ]
             ];
             foreach ($plans as $p) :
                 $is_featured = (isset($p['style']) && $p['style'] === 'featured');
-                $cta_text = $p['cta'] ?? 'Get Started';
+                $cta_text = $p['cta'] ?? 'Deploy Command Center';
                 $cta_link = $p['link'] ?? '/register';
             ?>
                 <div class="pricing-plan-card <?php echo $is_featured ? 'is-featured' : 'is-light'; ?> relative flex-column">

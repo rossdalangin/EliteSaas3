@@ -8,7 +8,7 @@ get_header(); ?>
 <?php
 $h_title = get_option('saas_home_title') ?: get_the_title();
 $h_hero  = get_option('saas_home_hero');
-$h_cta   = get_option('saas_home_cta') ?: 'Get Started Free';
+$h_cta   = get_option('saas_home_cta') ?: 'Deploy Command Center';
 $h_img   = get_option('saas_home_image');
 ?>
 <main id="landing-page" class="landing-main bg-color">
@@ -19,7 +19,7 @@ $h_img   = get_option('saas_home_image');
 
     <div class="sticky-buy" id="landing-sticky-cta">
         <p class="mb-0 font-bold color-dark">Join 12,000+ elite creators today.</p>
-        <a href="<?php echo home_url('/register'); ?>" class="btn-sticky-cta">Get Started Free →</a>
+        <a href="<?php echo home_url('/register'); ?>" class="btn-sticky-cta">Deploy Command Center →</a>
     </div>
 
     <script>
@@ -274,7 +274,7 @@ $h_img   = get_option('saas_home_image');
                 </div>
                 <div class="p-20 bg-glass-card">
                     <div class="flex-between mb-10">
-                        <strong class="font-bold color-white">Variant B: "Get Started"</strong>
+                        <strong class="font-bold color-white">Variant B: "Deploy Command Center"</strong>
                         <span class="color-vibrant">24.8% (Winner)</span>
                     </div>
                     <div class="progress-bar-container"><div class="progress-bar-fill-vibrant h-6 radius-100 progress-fill-24"></div></div>
@@ -435,16 +435,16 @@ $h_img   = get_option('saas_home_image');
             $pricing_json = get_option('saas_home_pricing_json');
             $plans = json_decode($pricing_json, true) ?: [
                 [
-                    'name' => 'Free', 'price' => '$0', 'period' => 'forever', 'cta' => 'Join for Free', 'link' => '/register', 'style' => 'light',
+                    'name' => 'Foundational', 'price' => '$0', 'period' => 'forever', 'cta' => 'Join for Free', 'link' => '/register', 'style' => 'light',
                     'features' => ['1 Profile', 'Standard Blocks', 'Basic Analytics', 'Community Support']
                 ],
                 [
-                    'name' => 'Elite Pro', 'price' => '$19', 'period' => '/mo', 'cta' => 'Upgrade to Pro', 'link' => '/register?plan=pro', 'style' => 'featured', 'badge' => 'FOR THE ELITE 1%',
+                    'name' => 'Elite Command', 'price' => '$19', 'period' => '/mo', 'cta' => 'Invest in Authority', 'link' => '/register?plan=pro', 'style' => 'featured', 'badge' => 'FOR THE ELITE 1%',
                     'features' => ['Unlimited Premium Blocks', 'Lead Generation CRM', 'Custom Domain Mapping', 'Whitelabel Branding', 'Priority Support']
                 ],
                 [
-                    'name' => 'Agency Unlimited', 'price' => '$49', 'period' => '/mo', 'cta' => 'Go Unlimited', 'link' => '/register?plan=agency', 'style' => 'dark',
-                    'features' => ['Everything in Pro', 'Unlimited Sub-accounts', 'API & Webhook Access', 'White-label Client Funnels', 'Dedicated Account Manager']
+                    'name' => 'Empire Scale', 'price' => '$49', 'period' => '/mo', 'cta' => 'Go Unlimited', 'link' => '/register?plan=agency', 'style' => 'dark',
+                    'features' => ['Everything in Elite Command', 'Unlimited Sub-accounts', 'API & Webhook Access', 'White-label Client Funnels', 'Dedicated Account Manager']
                 ]
             ];
             foreach ($plans as $p) :
@@ -524,7 +524,7 @@ $h_img   = get_option('saas_home_image');
     <div class="container-narrow mx-auto relative z-1">
         <h2 class="text-5xl font-black mb-20 lh-1-6">Ready to scale your digital presence?</h2>
         <p class="text-2xl opacity-80 mb-40">Join thousands of elite creators who are building their future on our platform.</p>
-        <a href="<?php echo home_url('/register'); ?>" class="font-black text-2xl shadow-xl btn-elite-launch btn-register-footer">Get Started for Free</a>
+        <a href="<?php echo home_url('/register'); ?>" class="font-black text-2xl shadow-xl btn-elite-launch btn-register-footer">Deploy Command Center for Free</a>
         <p class="mt-20 text-sm opacity-70">No credit card required. Cancel anytime.</p>
     </div>
 </section>
@@ -537,7 +537,7 @@ $h_img   = get_option('saas_home_image');
         $f_json = get_option('saas_home_faq');
         $faqs = json_decode($f_json, true) ?: [
             ['q' => 'Is it free?', 'a' => 'Yes, we have a generous free tier for everyone.'],
-            ['q' => 'Can I use my own domain?', 'a' => 'Absolutely! Custom domain support is available on Pro plans.']
+            ['q' => 'Can I use my own domain?', 'a' => 'Absolutely! Custom domain support is available on Elite Command plans.']
         ];
         foreach ($faqs as $f) : ?>
             <details class="faq-block bg-white mb-15 shadow-sm radius-12">
