@@ -122,7 +122,7 @@ class Saas_Dashboard {
                                 <div class="flex gap-15 mt-8 text-sm flex-wrap">
                                     <span><?php echo $meta['headline'] ? '[✓]' : '[ ]'; ?> Bio</span>
                                     <span><?php echo count($links) > 0 ? '[✓]' : '[ ]'; ?> Blocks</span>
-                                    <span><?php echo $is_pro ? '[✓]' : '[ ]'; ?> Pro Upgrade</span>
+                                    <span><?php echo $is_pro ? '[✓]' : '[ ]'; ?> Elite Upgrade</span>
                                 </div>
                             </div>
                             <button class="button" onclick="document.getElementById('saas-wizard-modal').style.display='flex'">Launch Setup Wizard</button>
@@ -222,7 +222,7 @@ class Saas_Dashboard {
                     <button data-tab="automation">⚙️ Settings</button>
                     <button data-tab="share">📱 Share</button>
                     <button data-tab="templates">🎨 Templates</button>
-                    <button data-tab="billing">💳 Pro</button>
+                    <button data-tab="billing">💳 Elite</button>
                     <button data-tab="seo">🔍 SEO</button>
                     <button data-tab="tracking">📊 Tracking</button>
                     <?php
@@ -254,11 +254,11 @@ class Saas_Dashboard {
                                     <div class="picker-item" data-type="testimonial"><span>⭐</span> Testim</div>
                                     <div class="picker-item" data-type="faq"><span>❓</span> FAQ</div>
                                     <div class="picker-item" data-type="pricing"><span>💰</span> Price</div>
-                                    <div class="picker-item <?php echo $is_pro ? '' : 'pro-locked'; ?>" data-type="image_gallery"><span>🖼️</span> Gal <span class="pro-badge">Pro</span></div>
-                                    <div class="picker-item" data-type="social_icons"><span>📱</span> Social</div>
-                                    <div class="picker-item <?php echo $is_pro ? '' : 'pro-locked'; ?>" data-type="newsletter"><span>📧</span> Mail <span class="pro-badge">Pro</span></div>
+                                    <div class="picker-item <?php echo $is_pro ? '' : 'pro-locked'; ?>" data-type="image_gallery"><span>🖼️</span> Gal <span class="pro-badge">Elite</span></div>
+                                    <div class="picker-item <?php echo $is_pro ? '' : 'pro-locked'; ?>" data-type="newsletter"><span>📧</span> Mail <span class="pro-badge">Elite</span></div>
+                                    <div class="picker-item <?php echo $is_pro ? '' : 'pro-locked'; ?>" data-type="calendar"><span>📅</span> Cal <span class="pro-badge">Elite</span></div>
                                     <div class="picker-item" data-type="lead_form"><span>🎯</span> Form</div>
-                                    <div class="picker-item <?php echo $is_pro ? '' : 'pro-locked'; ?>" data-type="calendar"><span>📅</span> Cal <span class="pro-badge">Pro</span></div>
+                                    <div class="picker-item" data-type="social_icons"><span>📱</span> Social</div>
                                 </div>
 
                                 <form id="saas-add-link-form">
@@ -412,7 +412,7 @@ class Saas_Dashboard {
                                         </div>
 
                                         <div class="field <?php echo $is_pro ? '' : 'pro-gated-inline'; ?>">
-                                            <label>A/B Testing (Pro)</label>
+                                            <label>A/B Testing (Elite)</label>
                                             <div class="flex gap-10">
                                                 <input type="text" name="ab_title_b" id="edit-link-ab-title" placeholder="Variant B Title" class="flex-1">
                                                 <input type="url" name="ab_url_b" id="edit-link-ab-url" placeholder="Variant B URL" class="flex-1">
@@ -421,7 +421,7 @@ class Saas_Dashboard {
                                         </div>
 
                                         <div class="field <?php echo $is_pro ? '' : 'pro-gated-inline'; ?>">
-                                            <label>Conditional Routing (Pro)</label>
+                                            <label>Conditional Routing (Elite)</label>
                                             <div class="flex-column gap-10">
                                                 <input type="url" name="url_mobile" id="edit-link-url-mobile" placeholder="Mobile-only URL">
                                                 <div class="flex gap-10">
@@ -605,7 +605,7 @@ class Saas_Dashboard {
                             </div>
                             <div class="field <?php echo $is_pro ? '' : 'pro-gated-inline'; ?>">
                                 <div class="flex flex-between flex-center mb-10">
-                                    <label class="mb-0">Custom Domain / Subdomain (Pro)</label>
+                                    <label class="mb-0">Custom Domain / Subdomain (Elite)</label>
                                     <button type="button" id="saas-domain-guide-trigger" class="button text-xs p-4-10 bg-primary-soft color-primary border-primary">❓ How to setup?</button>
                                 </div>
                                 <input type="text" name="custom_domain" value="<?php echo esc_attr(get_post_meta($profile_id, '_saas_custom_domain', true)); ?>" placeholder="profile.yourdomain.com">

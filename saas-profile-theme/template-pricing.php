@@ -38,7 +38,8 @@ if (!$plans) {
         <div class="stats-grid">
             <?php foreach ($plans as $p) :
                 $is_featured = (isset($p['style']) && $p['style'] === 'featured');
-                $check_color_class = $is_featured ? 'check-white' : 'check-green';
+                $is_empire = (strpos(strtolower($p['name']), 'empire') !== false);
+                $check_color_class = $is_featured ? 'check-white' : ($is_empire ? 'check-gold' : 'check-green');
             ?>
                 <div class="pricing-plan-card <?php echo $is_featured ? 'is-featured' : 'is-light'; ?> flex-column">
                     <?php if (isset($p['badge']) && !empty($p['badge'])) : ?>
@@ -56,7 +57,12 @@ if (!$plans) {
                             </li>
                         <?php endforeach; ?>
                     </ul>
-                    <a href="<?php echo home_url($p['link']); ?>" class="saas-link-btn <?php echo $is_featured ? 'cta-pro-featured' : 'style-featured'; ?>"><?php echo esc_html($p['cta']); ?></a>
+                    <?php
+                    $btn_class = 'cta-foundational-outline';
+                    if ($is_featured) $btn_class = 'cta-pro-featured premium-shimmer';
+                    if ($is_empire) $btn_class = 'cta-empire-gold premium-shimmer';
+                    ?>
+                    <a href="<?php echo home_url($p['link']); ?>" class="saas-link-btn <?php echo $btn_class; ?>"><?php echo esc_html($p['cta']); ?></a>
                 </div>
             <?php endforeach; ?>
         </div>

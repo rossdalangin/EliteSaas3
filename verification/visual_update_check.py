@@ -1,36 +1,48 @@
 from playwright.sync_api import sync_playwright
 import os
 
-def run_visual_check():
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        context = browser.new_context(viewport={'width': 1280, 'height': 800})
-        page = context.new_page()
+def run_visual_check(page):
+    # Path to the mock HTML file
+    current_dir = os.getcwd()
+    file_path = f"file://{current_dir}/verification/homepage_test.html"
 
-        # Assuming we can test with the local HTML if it reflects structure
-        # Since I cannot run a full WP server, I'll update the test HTML if needed
-        # But wait, there is homepage_test.html, let's see if we should update it
+    page.goto(file_path)
+    page.wait_for_timeout(1000)
 
-        page.goto(f"file://{os.getcwd()}/verification/homepage_test.html")
-        page.wait_for_timeout(1000)
+    # 1. Desktop View - Pricing Section
+    page.set_viewport_size({"width": 1280, "height": 800})
+    # Scroll to pricing
+    page.evaluate("window.scrollTo(0, 200)")
+    page.wait_for_timeout(500)
+    page.screenshot(path="/home/jules/verification/screenshots/pricing_update.png")
 
-        # Header area
-        page.screenshot(path="verification/screenshots/header_update.png", clip={'x': 0, 'y': 0, 'width': 1280, 'height': 150})
+    # 2. Desktop View - Header CTA
+    page.evaluate("window.scrollTo(0, 0)")
+    page.wait_for_timeout(500)
+    page.screenshot(path="/home/jules/verification/screenshots/header_update.png")
 
-        # Pricing area - need to scroll or find it
-        pricing_section = page.query_selector(".pricing-section")
-        if pricing_section:
-            pricing_section.scroll_into_view_if_needed()
-            page.wait_for_timeout(500)
-            page.screenshot(path="verification/screenshots/pricing_update.png")
-        else:
-            # Fallback if class is different in the test html
-            page.screenshot(path="verification/screenshots/full_page_update.png", full_page=True)
+    # 3. Mobile View - Menu
+    page.set_viewport_size({"width": 375, "height": 667})
+    page.wait_for_timeout(500)
+    page.screenshot(path="/home/jules/verification/screenshots/mobile_initial.png")
 
-        context.close()
-        browser.close()
+    # Open Menu
+    page.click(".menu-toggle")
+    page.wait_for_timeout(500)
+    page.screenshot(path="/home/jules/verification/screenshots/mobile_menu_open.png")
 
 if __name__ == "__main__":
-    if not os.path.exists("verification/screenshots"):
-        os.makedirs("verification/screenshots")
-    run_visual_check()
+    os.makedirs("/home/jules/verification/screenshots", exist_ok=True)
+    os.makedirs("/home/jules/verification/videos", exist_ok=True)
+
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        context = browser.new_context(
+            record_video_dir="/home/jules/verification/videos"
+        )
+        page = context.new_page()
+        try:
+            run_visual_check(page)
+        finally:
+            context.close()
+            browser.close()

@@ -145,10 +145,10 @@ if ( ! get_query_var( 'saas_profile' ) ) : ?>
 
             <div class="header-cta">
                 <?php if ( is_user_logged_in() ) : ?>
-                    <a href="<?php echo home_url('/dashboard'); ?>" class="saas-link-btn style-featured btn-header-cta">Command Center</a>
+                    <a href="<?php echo home_url('/dashboard'); ?>" class="btn-header-cta">Command Center</a>
                 <?php else : ?>
                     <a href="<?php echo home_url('/login'); ?>" class="header-cta-link">Login</a>
-                    <a href="<?php echo home_url('/register'); ?>" class="saas-link-btn style-featured btn-header-cta">Deploy Command Center</a>
+                    <a href="<?php echo home_url('/register'); ?>" class="btn-header-cta">Deploy Command Center</a>
                 <?php endif; ?>
             </div>
         </div>

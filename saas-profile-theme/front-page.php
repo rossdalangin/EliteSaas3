@@ -340,6 +340,7 @@ if ($comparison_json) : ?>
             ];
             foreach ($plans as $p) :
                 $is_featured = (isset($p['style']) && $p['style'] === 'featured');
+                $is_empire = (strpos(strtolower($p['name']), 'empire') !== false);
                 $cta_text = $p['cta'] ?? 'Deploy Command Center';
                 $cta_link = $p['link'] ?? '/register';
             ?>
@@ -351,10 +352,18 @@ if ($comparison_json) : ?>
                     <div class="text-5xl font-black mt-20 mb-20"><?php echo esc_html($p['price']); ?><small class="text-base opacity-70"><?php echo esc_html($p['period']); ?></small></div>
                     <ul class="benefit-list mb-40 text-left flex-1 pricing-features-list">
                         <?php foreach ($p['features'] as $f) : ?>
-                            <li class="mb-10">✓ <?php echo esc_html($f); ?></li>
+                            <li class="mb-10">
+                                <span class="<?php echo $is_featured ? 'check-white' : ($is_empire ? 'check-gold' : 'check-green'); ?> font-black">✓</span>
+                                <?php echo esc_html($f); ?>
+                            </li>
                         <?php endforeach; ?>
                     </ul>
-                    <a href="<?php echo home_url($cta_link); ?>" class="saas-link-btn font-bold btn-pricing-cta <?php echo $is_featured ? 'style-featured' : ''; ?>">
+                    <?php
+                    $btn_class = 'cta-foundational-outline';
+                    if ($is_featured) $btn_class = 'cta-pro-featured premium-shimmer';
+                    if ($is_empire) $btn_class = 'cta-empire-gold premium-shimmer';
+                    ?>
+                    <a href="<?php echo home_url($cta_link); ?>" class="saas-link-btn font-bold btn-pricing-cta <?php echo $btn_class; ?>">
                         <?php echo esc_html($cta_text); ?>
                     </a>
                 </div>
