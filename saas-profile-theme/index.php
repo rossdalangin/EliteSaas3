@@ -1,0 +1,810 @@
+<?php
+/**
+ * Main Template - Public Profile Rendering Engine (Enhanced for Modular Blocks)
+ */
+
+if ( ! defined( 'ABSPATH' ) ) exit;
+
+// Get Profile from Query Var
+$slug = get_query_var( 'saas_profile' );
+$profile = null;
+
+if ( $slug ) {
+    $profile = get_posts([
+        'name'        => $slug,
+        'post_type'   => 'saas_profile',
+        'post_status' => 'publish',
+        'numberposts' => 1
+    ]);
+    $profile = ! empty($profile) ? $profile[0] : null;
+}
+
+// If it's not a profile, fallback to standard WP loop (Theme as Active Theme support)
+if ( ! $profile ) {
+    include __DIR__ . '/header.php';
+    if ( have_posts() ) :
+        while ( have_posts() ) : the_post(); ?>
+            <article id="post-<?php the_ID(); ?>" <?php post_class('standard-page-container'); ?>>
+                <header class="entry-header">
+                    <?php the_title( '<h1 class="entry-title text-center mb-40 text-4xl">', '</h1>' ); ?>
+                </header>
+                <div class="entry-content">
+                    <?php the_content(); ?>
+                </div>
+            </article>
+        <?php endwhile;
+    else :
+        echo "<div class='standard-page-container'><h1>Page not found.</h1></div>";
+    endif;
+    include __DIR__ . '/footer.php';
+    return;
+}
+
+$profile_id = $profile->ID;
+$user_id = $profile->post_author;
+$meta = saas_get_profile_meta( $profile_id );
+$niche = get_post_meta($profile_id, '_saas_niche', true) ?: 'general';
+
+// Check Pro Status (Unified License Check)
+$is_pro = saas_is_profile_licensed($profile_id);
+$is_preview = isset($_GET['preview']) && $_GET['preview'] == '1';
+$bg_type = get_post_meta( $profile_id, '_saas_bg_type', true ) ?: 'flat';
+$bg_color = get_post_meta( $profile_id, '_saas_bg_color', true ) ?: '#f3f3f1';
+$gradient = get_post_meta( $profile_id, '_saas_bg_gradient', true );
+$btn_shape = get_post_meta( $profile_id, '_saas_btn_shape', true ) ?: 'pill';
+$font_family = get_post_meta( $profile_id, '_saas_font_family', true ) ?: "'Inter', sans-serif";
+$shadow_style = get_post_meta( $profile_id, '_saas_container_shadow', true ) ?: 'soft';
+$profile_theme = get_post_meta($profile_id, '_saas_profile_theme', true) ?: 'light';
+
+// Fetch Links (Modular Blocks)
+$blocks = get_posts([
+    'post_type'   => 'saas_link',
+    'meta_query' => [
+        ['key' => '_saas_profile_id', 'value' => $profile_id]
+    ],
+    'orderby'     => 'menu_order',
+    'order'       => 'ASC',
+    'numberposts' => -1,
+]);
+
+// Include Header
+if ( ! defined('ABSPATH') ) exit;
+$theme_class = 'theme-' . $profile_theme;
+include __DIR__ . '/header.php';
+?>
+
+<style id="saas-dynamic-css">
+    :root {
+        --primary-color: <?php echo esc_attr( $meta['theme_color'] ); ?>;
+        --bg-color: <?php echo esc_attr( $bg_color ); ?>;
+        --btn-radius: <?php
+            if ($btn_shape === 'pill') echo '50px';
+            elseif ($btn_shape === 'rounded') echo '12px';
+            else echo '0px';
+        ?>;
+        --font-family: <?php echo $font_family; ?>;
+        --shadow-style: <?php
+            if ($shadow_style === 'soft') echo '0 10px 30px rgba(0,0,0,0.05)';
+            elseif ($shadow_style === 'hard') echo '8px 8px 0px #333';
+            else echo 'none';
+        ?>;
+        --primary-btn-text: <?php echo (saas_get_contrast_color($meta['theme_color']) === 'dark') ? '#0f172a' : '#ffffff'; ?>;
+    }
+    <?php
+    $custom_css = get_post_meta($profile_id, '_saas_custom_css', true);
+    if ($is_pro && $custom_css) echo $custom_css;
+    ?>
+    body {
+        <?php if ($bg_type === 'gradient' && $gradient) : ?>
+            background: <?php echo esc_attr($gradient); ?>;
+        <?php else : ?>
+            background-color: var(--bg-color);
+        <?php endif; ?>
+    }
+</style>
+
+<?php if ($is_pro && $bg_type === 'mesh') : ?>
+    <div class="mesh-bg"></div>
+<?php elseif ($is_pro && $bg_type === 'particles') : ?>
+    <div id="particles-js"></div>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS('particles-js', {
+            "particles": { "number": { "value": 80 }, "color": { "value": "#ffffff" }, "opacity": { "value": 0.5 }, "size": { "value": 3 }, "line_linked": { "enable": true, "color": "#ffffff" }, "move": { "enable": true, "speed": 2 } },
+            "interactivity": { "events": { "onhover": { "enable": true, "mode": "repulse" } } }
+        });
+    </script>
+<?php endif; ?>
+
+<?php
+$global_contrast = saas_get_contrast_color($bg_color);
+?>
+<div id="profile-container" class="mx-auto niche-<?php echo esc_attr($niche); ?> contrast-<?php echo $global_contrast; ?>">
+    <!-- Cover Banner -->
+    <?php
+    $cover_id = get_post_meta($profile_id, '_saas_cover_id', true);
+    if ($cover_id) : ?>
+        <div class="profile-cover">
+            <?php echo wp_get_attachment_image($cover_id, 'large', false, ['class' => 'full-size-cover']); ?>
+        </div>
+    <?php endif; ?>
+
+    <!-- Header Block -->
+    <header class="profile-header <?php echo $cover_id ? 'has-cover' : ''; ?>">
+        <?php if ( has_post_thumbnail( $profile_id ) ) : ?>
+            <?php echo get_the_post_thumbnail( $profile_id, 'thumbnail' ); ?>
+        <?php else : ?>
+            <img src="https://via.placeholder.com/150" alt="Avatar" loading="lazy">
+        <?php endif; ?>
+        <h1 class="text-4xl font-black mb-10 tracking-tight">
+            <?php echo esc_html( get_the_author_meta( 'display_name', $profile->post_author ) ); ?>
+            <?php
+                $is_verified = $is_pro && get_post_meta($profile_id, '_saas_verified_badge', true);
+                $badge_class = 'verified-badge' . ($is_verified ? '' : ' display-none');
+            ?>
+            <span class="<?php echo $badge_class; ?>" title="Verified Professional">✨</span>
+        </h1>
+        <p class="headline"><?php echo esc_html( $meta['headline'] ); ?></p>
+        <?php if (!empty($meta['niche'])) : ?>
+            <span class="badge-niche mb-20"><?php echo esc_html(ucfirst($meta['niche'])); ?></span>
+        <?php endif; ?>
+        <p class="bio"><?php echo nl2br( esc_html( $meta['bio'] ) ); ?></p>
+    </header>
+
+    <?php
+    // Featured Component (Elite Pro Feature)
+    $featured_video = get_post_meta($profile_id, '_saas_featured_video', true);
+    if ($is_pro && $featured_video) : ?>
+        <div class="featured-media-wrapper mb-40 animate-fadein">
+            <div class="video-embed shadow-xl radius-24 overflow-hidden">
+                <?php echo wp_oembed_get( $featured_video ); ?>
+            </div>
+        </div>
+    <?php endif; ?>
+
+    <!-- Dynamic Blocks Engine -->
+    <div class="blocks-container">
+        <?php foreach ( $blocks as $index => $block ) :
+            $type = get_post_meta( $block->ID, '_saas_block_type', true ) ?: 'button';
+            $style = get_post_meta( $block->ID, '_saas_block_style', true ) ?: 'regular';
+            $animation = get_post_meta($block->ID, '_saas_block_animation', true) ?: 'fadeinup';
+            $base_url = get_post_meta( $block->ID, '_saas_link_url', true );
+            $url = saas_get_effective_url( $block->ID, $base_url );
+            $custom_bg = get_post_meta($block->ID, '_saas_custom_bg', true);
+            $custom_text = get_post_meta($block->ID, '_saas_custom_text', true);
+            $block_style_attr = '';
+            $contrast_class = '';
+            if ($custom_bg) {
+                $block_style_attr .= "background-color: $custom_bg; ";
+                $contrast_class = 'contrast-' . saas_get_contrast_color($custom_bg);
+            }
+            if ($custom_text) $block_style_attr .= "color: $custom_text; ";
+
+            if (!$is_preview) {
+                $start_date = get_post_meta($block->ID, '_saas_start_date', true);
+                $end_date = get_post_meta($block->ID, '_saas_end_date', true);
+                $now = time();
+                if ($start_date && strtotime($start_date) > $now) continue;
+                if ($end_date && strtotime($end_date) < $now) continue;
+
+                $hour_from = get_post_meta($block->ID, '_saas_hour_from', true);
+                $hour_to   = get_post_meta($block->ID, '_saas_hour_to', true);
+                if ($is_pro && ($hour_from !== '' || $hour_to !== '')) {
+                    $current_hour = (int) current_time('G');
+                    if ($hour_from !== '' && $current_hour < (int)$hour_from) continue;
+                    if ($hour_to !== '' && $current_hour > (int)$hour_to) continue;
+                }
+            }
+            ?>
+            <div class="saas-block block-<?php echo esc_attr($type); ?> style-<?php echo esc_attr($style); ?> animate-<?php echo esc_attr($animation); ?> <?php echo $contrast_class; ?>" data-block-id="<?php echo $block->ID; ?>" style="animation-delay: <?php echo $index * 0.1; ?>s;">
+                <?php if ($type === 'button') :
+                    $has_pass = !empty(get_post_meta($block->ID, '_saas_link_password', true));
+                    $ab_title_b = get_post_meta($block->ID, '_saas_ab_title_b', true);
+                    $ab_url_b   = get_post_meta($block->ID, '_saas_ab_url_b', true);
+                    $variant    = 'a';
+
+                    if ($is_pro && $ab_title_b && $ab_url_b) {
+                        $cookie_name = 'saas_ab_' . $block->ID;
+                        if (isset($_COOKIE[$cookie_name])) {
+                            $variant = $_COOKIE[$cookie_name];
+                        } else {
+                            $variant = (rand(0, 1) === 1) ? 'b' : 'a';
+                            setcookie($cookie_name, $variant, time() + (86400 * 30), "/");
+                        }
+                        if ($variant === 'b') {
+                            $block->post_title = $ab_title_b;
+                            $url = saas_get_effective_url($block->ID, $ab_url_b);
+                        }
+                    }
+                    ?>
+                    <a href="<?php echo esc_url( $url ); ?>"
+                       class="saas-link-btn"
+                       style="<?php echo $block_style_attr; ?>"
+                       data-link-id="<?php echo $block->ID; ?>"
+                       data-variant="<?php echo $variant; ?>"
+                       onclick="return saasCheckLink(event, <?php echo $block->ID; ?>, <?php echo $has_pass ? 'true' : 'false'; ?>, '<?php echo $variant; ?>')">
+                        <?php
+                        $thumb_id = get_post_meta($block->ID, '_saas_link_image_id', true);
+                        if ($thumb_id) : ?>
+                            <img src="<?php echo esc_url(wp_get_attachment_thumb_url($thumb_id)); ?>" class="btn-thumb" loading="lazy">
+                        <?php endif; ?>
+                        <div class="btn-text-wrapper">
+                            <span class="btn-label"><?php echo esc_html( $block->post_title ); ?> <?php if($has_pass) echo '🔒'; ?></span>
+                            <?php
+                            $btn_desc = get_post_meta($block->ID, '_saas_link_desc', true);
+                            if ($btn_desc) : ?>
+                                <small class="btn-desc"><?php echo esc_html($btn_desc); ?></small>
+                            <?php endif; ?>
+                        </div>
+                    </a>
+                <?php elseif ($type === 'video') : ?>
+                    <div class="video-embed">
+                        <?php echo wp_oembed_get( $url ); ?>
+                    </div>
+                <?php elseif ($type === 'testimonial') : ?>
+                    <div class="testimonial-block shadow-sm">
+                        <div class="testimonial-content">
+                            <div class="quote-mark">“</div>
+                            <p class="quote"><?php echo esc_html( get_post_meta($block->ID, '_saas_testimonial_text', true) ); ?></p>
+                            <div class="testimonial-author mt-20">
+                                <strong class="display-block color-dark"><?php echo esc_html( $block->post_title ); ?></strong>
+                                <?php if ($url && $url !== '#') : ?>
+                                    <a href="<?php echo esc_url($url); ?>" class="testimonial-link text-xs font-bold color-primary mt-5 display-block" target="_blank">View Success Story →</a>
+                                <?php endif; ?>
+                            </div>
+                        </div>
+                    </div>
+                <?php elseif ($type === 'faq') : ?>
+                    <details class="faq-block">
+                        <summary><?php echo esc_html( $block->post_title ); ?></summary>
+                        <p><?php echo esc_html( get_post_meta($block->ID, '_saas_faq_answer', true) ); ?></p>
+                    </details>
+                <?php elseif ($type === 'pricing') : ?>
+                    <div class="pricing-card elite-pricing shadow-lg" style="<?php echo $block_style_attr; ?>">
+                        <div class="p-40">
+                            <h3 class="text-2xl mb-10"><?php echo esc_html( $block->post_title ); ?></h3>
+                            <div class="price text-5xl font-black mb-30"><?php echo esc_html( get_post_meta($block->ID, '_saas_price', true) ); ?></div>
+                            <ul class="benefit-list mb-40 text-left">
+                                <?php
+                                $features = get_post_meta($block->ID, '_saas_features', true) ?: [];
+                                foreach ($features as $feature) : ?>
+                                    <li class="mb-12 flex gap-12"><span>✓</span> <span><?php echo esc_html($feature); ?></span></li>
+                                <?php endforeach; ?>
+                            </ul>
+                            <a href="<?php echo esc_url( $url ); ?>" class="saas-link-btn style-featured full-width">Secure Access Now</a>
+                        </div>
+                    </div>
+                <?php elseif ($type === 'image_gallery') : ?>
+                    <div class="image-gallery-block">
+                        <h3 class="mb-24"><?php echo esc_html($block->post_title); ?></h3>
+                        <div class="gallery-grid">
+                            <?php
+                            $images = get_post_meta($block->ID, '_saas_gallery_images', true) ?: [];
+                            foreach ($images as $img_url) : ?>
+                                <div class="gallery-item shadow-sm">
+                                    <img src="<?php echo esc_url($img_url); ?>" alt="Gallery Image" loading="lazy">
+                                </div>
+                            <?php endforeach; ?>
+                        </div>
+                    </div>
+                <?php elseif ($type === 'calendar' && !empty($url) && $url !== '#') : ?>
+                    <div class="calendar-block">
+                        <h3><?php echo esc_html($block->post_title); ?></h3>
+                        <div class="calendar-embed">
+                            <iframe src="<?php echo esc_url($url); ?>" width="100%" height="400" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                <?php elseif ($type === 'social_icons') : ?>
+                    <div class="social-icons-block">
+                        <?php
+                        $socials = get_post_meta($block->ID, '_saas_social_data', true) ?: [];
+                        foreach ($socials as $platform => $p_url) :
+                            $icon_map = [
+                                'instagram' => '📸', 'facebook' => '👥', 'twitter' => '🐦', 'x' => '𝕏',
+                                'linkedin' => '💼', 'youtube' => '🎥', 'whatsapp' => '💬', 'tiktok' => '🎵',
+                                'email' => '✉️', 'phone' => '📞', 'website' => '🌐'
+                            ];
+                            $icon = $icon_map[strtolower($platform)] ?? '🔗';
+                            ?>
+                            <a href="<?php echo esc_url($p_url); ?>" class="social-icon social-<?php echo esc_attr(strtolower($platform)); ?>" target="_blank" title="<?php echo esc_attr(ucfirst($platform)); ?>">
+                                <span class="si-icon"><?php echo $icon; ?></span>
+                            </a>
+                        <?php endforeach; ?>
+                    </div>
+                <?php elseif ($type === 'countdown') : ?>
+                    <div class="countdown-block" data-expiry="<?php echo esc_attr(get_post_meta($block->ID, '_saas_expiry', true)); ?>">
+                        <div class="timer-title"><?php echo esc_html($block->post_title); ?></div>
+                        <div class="timer-display">00:00:00:00</div>
+                    </div>
+                <?php elseif ($type === 'newsletter') : ?>
+                    <div class="newsletter-block">
+                        <h3><?php echo esc_html($block->post_title); ?></h3>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Email Address" required class="saas-input mb-15">
+                            <button type="submit" class="saas-input font-bold color-white border-none cursor-pointer bg-primary-dark">Join</button>
+                        </form>
+                    </div>
+                <?php elseif ($type === 'milestone') : ?>
+                    <div class="milestone-block">
+                        <div class="ms-title"><?php echo esc_html($block->post_title); ?></div>
+                        <div class="ms-bar-bg">
+                            <div class="ms-bar-fill" style="width: <?php echo esc_attr(get_post_meta($block->ID, '_saas_ms_percent', true) ?: '50'); ?>%;"></div>
+                        </div>
+                        <div class="ms-label"><?php echo esc_html(get_post_meta($block->ID, '_saas_ms_label', true) ?: 'Progress'); ?></div>
+                    </div>
+                <?php elseif ($type === 'product') : ?>
+                    <div class="product-block">
+                        <div class="product-info">
+                            <h4><?php echo esc_html($block->post_title); ?></h4>
+                            <div class="product-price"><?php echo esc_html(get_post_meta($block->ID, '_saas_price', true) ?: '$0'); ?></div>
+                        </div>
+                        <form class="product-checkout-form">
+                            <input type="hidden" name="block_id" value="<?php echo $block->ID; ?>">
+                            <input type="hidden" name="plan_id" value="product_<?php echo $block->ID; ?>">
+                            <button type="submit" class="saas-link-btn product-cta cursor-pointer border-none">Buy Now</button>
+                        </form>
+                    </div>
+                <?php elseif ($type === 'social_feed') : ?>
+                    <div class="social-feed-block">
+                        <div class="placeholder-block">
+                            <p class="font-bold mb-0"><?php echo esc_html($block->post_title); ?> Feed</p>
+                            <p class="text-sm color-lighter mb-0">Embed for <?php echo esc_url($url); ?> will appear here.</p>
+                        </div>
+                    </div>
+                <?php elseif ($type === 'lead_form') : ?>
+                    <section class="lead-form-section block-lead-form glass-card p-32 text-left">
+                        <h3 class="mb-24 text-center"><?php echo esc_html( $block->post_title ?: 'Contact Me' ); ?></h3>
+                        <form class="saas-dynamic-form" data-block-id="<?php echo $block->ID; ?>">
+                            <input type="hidden" name="profile_id" value="<?php echo $profile_id; ?>">
+                            <input type="hidden" name="block_id" value="<?php echo $block->ID; ?>">
+                            <input type="hidden" name="security" value="<?php echo wp_create_nonce('saas_lead_nonce'); ?>">
+                            <div class="display-none"><input type="text" name="saas_honeypot"></div>
+                            <div class="mb-16">
+                                <input type="text" name="name" placeholder="Your Name" required class="saas-input">
+                            </div>
+                            <div class="mb-16">
+                                <input type="email" name="email" placeholder="Your Email" required class="saas-input">
+                            </div>
+                            <?php if (get_post_meta($profile_id, '_saas_form_phone', true)) : ?>
+                                <div class="mb-16">
+                                    <input type="text" name="phone" placeholder="<?php echo esc_attr(get_post_meta($profile_id, '_saas_form_label_phone', true) ?: 'Phone Number'); ?>" <?php if(get_post_meta($profile_id, '_saas_form_req_phone', true)) echo 'required'; ?> class="saas-input">
+                                </div>
+                            <?php endif; ?>
+                            <?php if (get_post_meta($profile_id, '_saas_form_msg', true)) : ?>
+                                <div class="mb-24">
+                                    <textarea name="message" placeholder="<?php echo esc_attr(get_post_meta($profile_id, '_saas_form_label_msg', true) ?: 'Your Message'); ?>" rows="3" <?php if(get_post_meta($profile_id, '_saas_form_req_msg', true)) echo 'required'; ?> class="saas-input"></textarea>
+                                </div>
+                            <?php endif; ?>
+                            <button type="submit" class="saas-link-btn style-featured font-bold border-none cursor-pointer">Submit Request</button>
+                        </form>
+                        <?php
+                        $footer = get_post_meta($block->ID, '_saas_link_desc', true);
+                        if ($footer) echo '<p class="field-hint text-center mt-15 opacity-70">' . esc_html($footer) . '</p>';
+                        ?>
+                        <div class="lead-feedback"></div>
+                    </section>
+                <?php endif; ?>
+            </div>
+        <?php endforeach; ?>
+    </div>
+
+    <!-- vCard Block (Sticky) -->
+    <div class="social-share-buttons">
+        <a href="https://twitter.com/intent/tweet?url=<?php echo urlencode(home_url($slug)); ?>" target="_blank">𝕏</a>
+        <a href="https://wa.me/?text=<?php echo urlencode(home_url($slug)); ?>" target="_blank">WhatsApp</a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode(home_url($slug)); ?>" target="_blank">FB</a>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=<?php echo urlencode(home_url($slug)); ?>" target="_blank">LI</a>
+    </div>
+
+    <?php
+    $social_proof = get_post_meta($profile_id, '_saas_social_proof', true);
+    if ($social_proof && $is_pro) :
+        $analytics = new Saas_Analytics();
+        $summary = $analytics->get_user_summary($user_id);
+    ?>
+        <div class="social-proof-bubble animate-bouncein">
+            👁️ <?php echo number_format($summary['views'] + 100); ?> people visited recently
+        </div>
+    <?php endif; ?>
+
+    <div class="sticky-cta">
+        <a href="<?php echo home_url('/?saas_action=vcard&profile=' . $profile_id); ?>" class="save-contact-btn">
+            <span class="text-xl">💾</span>
+            <span>Exchange Digital Card</span>
+        </a>
+    </div>
+
+    <!-- FOMO Activity Popups (Elite Pro) -->
+    <?php
+    $fomo_enabled = get_post_meta($profile_id, '_saas_fomo_popups', true);
+    if ($is_pro && $fomo_enabled) :
+        $analytics = new Saas_Analytics();
+        $recent_leads = $analytics->get_recent_leads($profile_id);
+        if ($recent_leads) :
+        ?>
+        <div id="saas-fomo-popup" class="fomo-hidden">
+            <div class="fomo-icon">🚀</div>
+            <div class="fomo-content">
+                <p id="fomo-text"></p>
+                <small id="fomo-time"></small>
+            </div>
+        </div>
+        <script>
+            const recentLeads = <?php echo json_encode($recent_leads); ?>;
+            let currentLeadIdx = 0;
+            const popup = document.getElementById('saas-fomo-popup');
+            const pText = document.getElementById('fomo-text');
+            const pTime = document.getElementById('fomo-time');
+
+            function showNextFomo() {
+                const lead = recentLeads[currentLeadIdx];
+                pText.innerHTML = `<strong>${lead.name}</strong> just inquired!`;
+                pTime.innerText = lead.time;
+                popup.classList.remove('fomo-hidden');
+                popup.classList.add('fomo-visible');
+
+                setTimeout(() => {
+                    popup.classList.remove('fomo-visible');
+                    popup.classList.add('fomo-hidden');
+                    currentLeadIdx = (currentLeadIdx + 1) % recentLeads.length;
+                    setTimeout(showNextFomo, 5000);
+                }, 4000);
+            }
+            setTimeout(showNextFomo, 3000);
+        </script>
+        <?php endif; ?>
+    <?php endif; ?>
+
+    <!-- Growth Branding (Hide for Pro) -->
+    <?php
+    $hide_branding = get_post_meta($profile_id, '_saas_hide_branding', true);
+    $footer_text   = get_post_meta($profile_id, '_saas_footer_text', true);
+
+    if ($is_pro) : ?>
+        <div class="saas-growth-branding">
+            <?php echo esc_html($footer_text ?: ''); ?>
+        </div>
+    <?php else : ?>
+        <div class="saas-growth-branding">
+            <a href="<?php echo home_url('/?ref=' . $slug); ?>" class="inherit-link font-black">
+                Powered by <?php echo get_bloginfo('name'); ?> 🚀
+            </a>
+        </div>
+    <?php endif; ?>
+
+    <!-- Mobile Navigation Bar -->
+    <nav class="profile-bottom-nav">
+        <a href="#profile-container" title="Top">🏠</a>
+        <a href="<?php echo home_url('/?saas_action=vcard&profile=' . $profile_id); ?>" class="nav-vcard" title="Save Contact">👤</a>
+        <a href="mailto:<?php echo get_the_author_meta('user_email', $user_id); ?>" title="Email">✉️</a>
+        <a href="<?php echo home_url('/register'); ?>" title="Create Yours">➕</a>
+        <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" title="Share">📤</a>
+    </nav>
+
+    <!-- Link Password Modal -->
+    <div id="link-password-modal" class="saas-theme-modal display-none">
+        <div class="modal-inner">
+            <div class="modal-icon">🔒</div>
+            <h3>Password Required</h3>
+            <p>This content is protected. Please enter the password to continue.</p>
+            <form id="saas-pass-form" class="mt-20">
+                <input type="hidden" id="modal-link-id">
+                <input type="password" id="modal-pass-input" placeholder="Enter Password" class="saas-input mb-15">
+                <button type="submit" class="saas-input font-bold color-white border-none cursor-pointer bg-primary-color">Unlock Content</button>
+            </form>
+            <button class="close-pass-modal modal-close-btn">Cancel</button>
+        </div>
+    </div>
+</div>
+
+<?php
+// Profile Password Protection Logic
+$profile_pass = get_post_meta($profile_id, '_saas_profile_password', true);
+if ($is_pro && $profile_pass) : ?>
+    <div id="profile-gate" class="saas-theme-modal bg-white-pure z-99999">
+        <div class="container-narrow p-40 text-center">
+            <div class="modal-icon">🔐</div>
+            <h2>Private Profile</h2>
+            <p>Please enter the password to view this digital identity.</p>
+            <form id="profile-gate-form">
+                <input type="password" id="gate-pass" placeholder="Password" required class="saas-input mb-15">
+                <button type="submit" class="saas-input font-bold color-white border-none cursor-pointer bg-primary-color">Unlock Profile</button>
+            </form>
+            <div id="gate-error" class="color-red mt-10 display-none">Incorrect password.</div>
+        </div>
+    </div>
+    <script>
+    document.getElementById('profile-gate-form').onsubmit = (e) => {
+        e.preventDefault();
+        const pass = document.getElementById('gate-pass').value;
+        if (pass === '<?php echo esc_js($profile_pass); ?>') {
+            document.getElementById('profile-gate').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        } else {
+            document.getElementById('gate-error').classList.remove('display-none');
+        }
+    };
+    document.body.style.overflow = 'hidden';
+    </script>
+<?php endif; ?>
+
+<script>
+// Track Profile View on Load
+document.addEventListener('DOMContentLoaded', function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const eventType = urlParams.get('src') === 'nfc' ? 'nfc_tap' : 'view';
+    saasTrackEvent(eventType, <?php echo $profile_id; ?>);
+
+    // Instant vCard Logic (for NFC/Premium users)
+    if (urlParams.get('action') === 'vcard_auto' || urlParams.get('src') === 'nfc') {
+        setTimeout(() => {
+            window.location.href = '<?php echo home_url('/?saas_action=vcard&profile=' . $profile_id); ?>';
+        }, 2000);
+    }
+});
+
+// Password protection check (Modern Modal UI)
+function saasCheckLink(e, linkId, hasPass, variant = 'a') {
+    if (!hasPass) {
+        saasTrackClick(linkId, variant);
+        return true;
+    }
+
+    e.preventDefault();
+    const modal = document.getElementById('link-password-modal');
+    document.getElementById('modal-link-id').value = linkId;
+    document.getElementById('modal-pass-input').value = '';
+    modal.classList.remove('display-none');
+    modal.style.display = 'flex';
+
+    return false;
+}
+
+document.querySelector('.close-pass-modal')?.addEventListener('click', () => {
+    document.getElementById('link-password-modal').classList.add('display-none');
+    document.getElementById('link-password-modal').style.display = 'none';
+});
+
+document.getElementById('saas-pass-form')?.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const linkId = document.getElementById('modal-link-id').value;
+    const pass = document.getElementById('modal-pass-input').value;
+    const btn = this.querySelector('button');
+    const originalText = btn.innerText;
+
+    btn.innerText = 'Verifying...';
+    btn.disabled = true;
+
+    const formData = new FormData();
+    formData.append('action', 'saas_verify_link_password');
+    formData.append('link_id', linkId);
+    formData.append('password', pass);
+
+    fetch(saas_data.ajax_url, {
+        method: 'POST',
+        body: formData
+    })
+    .then(r => r.json())
+    .then(data => {
+        if (data.success) {
+            saasTrackClick(linkId);
+            window.location.href = data.data.url;
+        } else {
+            alert(data.data);
+            btn.innerText = originalText;
+            btn.disabled = false;
+        }
+    });
+});
+
+// Analytics tracking
+function saasTrackClick(linkId, variant = 'a') {
+    const eventType = (variant === 'b') ? 'click_variant_b' : 'click';
+    saasTrackEvent(eventType, linkId);
+}
+
+function saasTrackEvent(type, targetId) {
+    fetch(saas_data.rest_url + '/track', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+            event: type,
+            target_id: targetId
+        })
+    });
+}
+
+// Countdown Timer Logic
+function saasInitCountdowns() {
+    document.querySelectorAll('.countdown-block').forEach(block => {
+        const expiryStr = block.dataset.expiry;
+        if (!expiryStr) return;
+        const expiry = new Date(expiryStr).getTime();
+        const display = block.querySelector('.timer-display');
+
+        const interval = setInterval(() => {
+            const now = new Date().getTime();
+            const distance = expiry - now;
+
+            if (distance < 0) {
+                clearInterval(interval);
+                display.innerHTML = "EXPIRED";
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            display.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+        }, 1000);
+    });
+}
+document.addEventListener('DOMContentLoaded', saasInitCountdowns);
+
+// Newsletter form handling via AJAX
+document.querySelectorAll('.newsletter-form').forEach(form => {
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const block = this.closest('.saas-block');
+        const emailInput = this.querySelector('input[type="email"]');
+        const submitBtn = this.querySelector('button');
+        const originalBtnText = submitBtn.innerText;
+
+        submitBtn.innerText = 'Joining...';
+        submitBtn.disabled = true;
+
+        const formData = new FormData();
+        formData.append('action', 'saas_submit_lead');
+        formData.append('email', emailInput.value);
+        formData.append('name', 'Newsletter Subscriber');
+        formData.append('profile_id', '<?php echo $profile_id; ?>');
+        if (block.dataset.blockId) formData.append('block_id', block.dataset.blockId);
+        formData.append('security', '<?php echo wp_create_nonce('saas_lead_nonce'); ?>');
+
+        fetch(saas_data.ajax_url, {
+            method: 'POST',
+            body: formData
+        })
+        .then(r => r.json())
+        .then(data => {
+            if (data.success) {
+                this.innerHTML = '<p class="font-bold color-white mt-10">✓ Subscribed successfully!</p>';
+            } else {
+                alert(data.data);
+                submitBtn.innerText = originalBtnText;
+                submitBtn.disabled = false;
+            }
+        });
+    });
+});
+
+// Real-Time Preview PostMessage Listener
+window.addEventListener('message', function(event) {
+    if (event.data.type === 'live_update') {
+        const { key, value } = event.data;
+        if (key === 'cover_update') {
+            const coverCont = document.querySelector('.profile-cover');
+            if (coverCont) {
+                const img = coverCont.querySelector('img');
+                if (img) img.src = value;
+                else coverCont.innerHTML = `<img src="${value}" class="full-size-cover">`;
+            } else {
+                const header = document.querySelector('.profile-header');
+                const newCover = document.createElement('div');
+                newCover.className = 'profile-cover';
+                newCover.innerHTML = `<img src="${value}" class="full-size-cover">`;
+                header.parentNode.insertBefore(newCover, header);
+                header.classList.add('has-cover');
+            }
+        }
+        if (key === 'profile_image_update') {
+            const img = document.querySelector('.profile-header img');
+            if (img) img.src = value;
+        }
+        if (key === 'headline') document.querySelector('.profile-header h1').innerText = value;
+        if (key === 'bio') document.querySelector('.profile-header .bio').innerText = value;
+        if (key === 'theme_color') document.documentElement.style.setProperty('--primary-color', value);
+        if (key === 'bg_value') {
+            if (value.includes('gradient')) document.body.style.background = value;
+            else document.body.style.backgroundColor = value;
+        }
+        if (key === 'profile_theme') {
+            document.body.classList.remove('theme-light', 'theme-dark', 'theme-vibrant', 'theme-luxury', 'theme-modern-glass', 'theme-midnight-neon');
+            document.body.classList.add('theme-' + value);
+        }
+        if (key === 'font_family') {
+            document.documentElement.style.setProperty('--font-family', value);
+        }
+        if (key === 'btn_shape') {
+            let radius = '0px';
+            if (value === 'pill') radius = '50px';
+            else if (value === 'rounded') radius = '12px';
+            document.documentElement.style.setProperty('--btn-radius', radius);
+        }
+        if (key === 'container_shadow') {
+            let shadow = 'none';
+            if (value === 'soft') shadow = '0 10px 30px rgba(0,0,0,0.05)';
+            else if (value === 'hard') shadow = '8px 8px 0px #333';
+            document.documentElement.style.setProperty('--shadow-style', shadow);
+        }
+        if (key === 'verified_badge') {
+            const badge = document.querySelector('.verified-badge');
+            if (badge) {
+                if (value) badge.classList.remove('display-none');
+                else badge.classList.add('display-none');
+            }
+        }
+        if (key === 'custom_css') {
+            const style = document.getElementById('saas-custom-style-tag') || document.createElement('style');
+            style.id = 'saas-custom-style-tag';
+            style.textContent = value;
+            if (!style.parentElement) document.head.appendChild(style);
+        }
+    }
+});
+
+// Product Checkout handling
+document.querySelectorAll('.product-checkout-form').forEach(form => {
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const btn = this.querySelector('button');
+        btn.innerText = 'Redirecting...';
+        btn.disabled = true;
+
+        const formData = new FormData(this);
+        formData.append('action', 'saas_checkout');
+        formData.append('gateway', 'stripe'); // Default for products
+
+        fetch(saas_data.ajax_url, {
+            method: 'POST',
+            body: formData
+        })
+        .then(r => r.json())
+        .then(data => {
+            if (data.success) window.location.href = data.data.redirect_url;
+            else alert('Checkout failed');
+        });
+    });
+});
+
+// Lead form handling via AJAX (Dynamic Forms)
+document.querySelectorAll('.saas-dynamic-form').forEach(form => {
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const feedback = this.nextElementSibling;
+        const formData = new FormData(this);
+        formData.append('action', 'saas_submit_lead');
+
+        feedback.innerText = 'Sending...';
+
+        fetch(saas_data.ajax_url, {
+            method: 'POST',
+            body: formData
+        })
+        .then(r => r.json())
+        .then(data => {
+            feedback.innerText = data.data.message;
+            if (data.success) {
+                this.reset();
+                // Lead Magnet Delivery
+                if (data.data.download) {
+                    const a = document.createElement('a');
+                    a.href = data.data.download;
+                    a.download = '';
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                }
+                if (data.data.redirect) window.location.href = data.data.redirect;
+            }
+        })
+        .catch(err => {
+            feedback.innerText = 'Error sending lead.';
+        });
+    });
+});
+</script>
+
+<?php include __DIR__ . '/footer.php'; ?>

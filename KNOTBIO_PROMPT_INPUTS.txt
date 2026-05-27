@@ -1,0 +1,44 @@
+# KnotBio.com - Master Prompt Inputs
+# Use these values to fill the [BRACKETS] in the provided prompt list.
+
+[DESCRIBE YOUR IDEA IN DETAIL]: KnotBio.com is an "Authority Engine" disguised as a Link-in-Bio tool. Unlike competitors that provide a simple list of links, KnotBio uses conversion-first architecture, YIQ-based auto-contrast for perfect visibility, and niche-specific design overlays (for Coaches, Agencies, etc.). It includes integrated lead magnets, vCard exchange, and strategic "Hook-Story-Offer" templates to turn social media traffic into high-ticket leads.
+
+[DESCRIBE YOUR TARGET CUSTOMER / THEM]: High-ticket consultants, executive coaches, strategic advisors, and boutique agency owners who sell services for $3,000 to $50,000+. They are tired of using generic "Linktree" style tools that look like a digital graveyard and want a digital identity that reflects their premium authority.
+
+[LOCAL, REGIONAL OR GLOBAL]: Global.
+
+[HOURS]: 25 hours per week.
+
+[AMOUNT]: $1,000 (starting budget).
+
+[BE SPECIFIC - Goal Month 1]: 50 active profiles and the first 5 paying "Elite Pro" subscribers.
+
+[BE SPECIFIC - Goal Month 6]: Reach $5,000 Monthly Recurring Revenue (MRR) with a library of 500+ active authority engines.
+
+[WHERE YOUR CUSTOMERS ARE]: LinkedIn (for high-ticket outreach) and X/Twitter (for digital creator networking).
+
+[WHEN YOU WANT TO LAUNCH]: 30 days from today.
+
+[DESCRIBE IT WITH PRICE]: Elite Pro Authority Engine - $19/month or $190/year. Includes custom domains, lead CRM, advanced analytics, and all premium niche designs.
+
+[BIGGEST FEAR ABOUT BUYING]: "Looking unprofessional or tech-unsavory to high-value clients."
+
+[BIGGEST DESIRE]: "To be instantly recognized as the #1 authority in their industry the moment someone clicks their bio."
+
+[LIST COMPETITORS]: Linktree, Carrd, Bio.link, Stan Store.
+
+[DESCRIBE STARTUP]: KnotBio.com - The Conversion-First Bio Engine for the Elite 1%.
+
+[DESCRIBE IT WITH SIZE]: Global "Creator Economy" market for professionals, valued at $250B+ and growing 10-20% annually.
+
+[REVENUE, USERS OR WAITLIST]: 120 early-access signups, 12 beta-tested profiles for industry leaders (Tony Robbins style results), $0 revenue (Pre-launch).
+
+[BE SPECIFIC - Funding Goal]: $50,000 for initial engineering scaling and aggressive LinkedIn/X content marketing.
+
+[WHAT MAKES YOU DIFFERENT]: Our "Authority First" architecture. We don't provide links; we provide a funnel. Features like auto-contrast visibility, niche-specific overlays, and integrated vCard exchange for high-end networking.
+
+[BE HONEST - Biggest Strength]: Elite professional design aesthetic and deep understanding of high-ticket conversion psychology.
+
+[BE HONEST - Biggest Weakness]: Limited initial marketing reach compared to established VC-funded giants.
+
+[BE SPECIFIC - 90 Day Goal]: Launch and scale to $1,000 MRR with 50+ paying Elite members.

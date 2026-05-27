@@ -1,0 +1,50 @@
+# KnotBio.com - Elite Brand Asset Prompts
+# Optimized for Midjourney, DALL-E 3, and AI Video Engines (Sora, Runway Gen-2)
+
+---
+
+## 1. THE LOGO: THE "ELITE CONNECTION" MARK
+**Brand Vision:** Professional, secure, interconnected, and high-performance.
+
+**Prompt (Midjourney/DALL-E 3):**
+> Minimalist professional logo for "KnotBio". A stylized, geometric infinity knot that subtly incorporates the letters 'K' and 'B'. The knot should look like a continuous digital fiber, representing seamless connection. High-contrast Slate and Metallic Gold color palette. Flat vector design, elegant typography, ultra-modern, luxury tech aesthetic. Set against a clean white background. --v 6.0
+
+---
+
+## 2. PROMOTIONAL IMAGE PROMPTS (Social Media & Web)
+
+### A. The "NFC Interaction" (High-End Lifestyle)
+> POV shot of a luxury matte black business card being tapped against the back of an iPhone 15 Pro. A digital "KnotBio" profile instantly pops up on the screen with a beautiful glassmorphism UI. Bokeh background of a high-end skyscraper lounge. Photorealistic, 8k, cinematic lighting, shallow depth of field.
+
+### B. The "Command Center" (Creator Workspace)
+> A minimalist designer desk with a MacBook Pro and a high-end studio microphone. On the MacBook screen, a KnotBio.com dashboard is open, showing beautiful analytics charts in Indigo and Emerald. Next to the laptop is a cup of espresso and a small plant. Soft morning sunlight, clean aesthetic, "Elite Creator" vibes.
+
+### C. Abstract "Link Hub" Visualization
+> A futuristic 3D visualization of a central glowing node (the KnotBio profile) with multiple elegant fiber-optic lines connecting to various social media icons (YouTube, LinkedIn, Instagram). The icons are floating in a dark, atmospheric digital space with deep purple and blue ambient lighting. Hyper-detailed, Octane render, tech-noir style.
+
+---
+
+## 3. VIDEO PROMPTS & SCRIPTS (TikTok / Reels / Shorts)
+
+### Video 1: The "60-Second Transformation" (Fast-Paced)
+- **Concept:** Quick cuts showing a cluttered, ugly Linktree being replaced by a sleek KnotBio profile.
+- **Visual Prompt:** Split screen. Left side: "Old, Boring Link". Right side: "The KnotBio Elite Standard". Rapid transition showing the user dragging and dropping blocks and hitting "Publish".
+- **AI Video Engine Prompt:** Cinematic close-up of a finger swiping through a high-end mobile UI. Smooth transitions, motion graphics of analytics rising, vibrant color grading.
+
+### Video 2: The "Networking Ninja" (NFC Focused)
+- **Concept:** Meeting someone at a conference. Instead of a paper card, you tap your phone or card.
+- **Visual Prompt:** Slow-motion shot of two professionals shaking hands while one taps a sleek NFC card on the other's phone. The phone screen illuminates with a full-screen KnotBio digital card.
+- **AI Video Engine Prompt:** Professional networking event, soft-focus background, focus on the tech interaction. High-end cinematography, warm professional lighting, 24fps.
+
+### Video 3: The "Lead Magnet" (Result Focused)
+- **Concept:** Showing how KnotBio actually makes you money by capturing leads.
+- **Visual Prompt:** A notification bubble pops up on a phone: "New High-Ticket Lead Captured via KnotBio". The camera pans out to show a smiling consultant looking at their dashboard.
+- **AI Video Engine Prompt:** Close up of a smartphone screen showing a success message and a lead form. Soft aesthetic, bright professional office environment, high-end lifestyle videography.
+
+---
+
+## 4. BRAND COLORS (For Reference)
+- **Primary:** #4F46E5 (Elite Indigo)
+- **Accent:** #F59E0B (Command Gold)
+- **Success:** #10B981 (Growth Emerald)
+- **Neutral:** #0F172A (Deep Slate)

@@ -1,0 +1,96 @@
+# SaaS System Architecture - Link-in-Bio & Lead Gen
+
+## 1. System Overview
+The system is built as a WordPress-based SaaS. It uses a **Theme** for the public-facing user profiles and a **Companion Plugin** for the core logic, admin management, and user dashboard.
+
+### Core Components:
+- **Public Profile (Theme):** Fast, mobile-first page at `yourdomain.com/username`.
+- **User Dashboard (Plugin):** Where users manage their links, profile, leads, and analytics.
+- **Admin Panel (WP Admin):** Global settings, user management, payment configuration, and User Plan oversight.
+- **Data Layer:** Uses WordPress Custom Post Types (CPT) and custom tables for analytics. Supports Media Library integration for photos/banners.
+
+## 2. Component Relationships
+```text
+[ User ] <--> [ Frontend Profile (Theme) ] <--> [ Analytics Table ]
+   ^                  |
+   |                  v
+   |          [ Lead Gen Form ] ----> [ Leads CPT ]
+   |                  ^
+   |                  |
+[ User Dashboard ] <---
+   |
+   +--> [ Profiles CPT ]
+   +--> [ Links CPT ]
+   +--> [ Payment Gateway (Stripe/PayPal) ]
+```
+
+## 3. UI Wireframes (Text-Based)
+
+### A. Public Profile (Mobile View)
+```text
++-----------------------+
+|    [ Profile Pic ]    |
+|      @username        |
+|    Headline/Bio       |
++-----------------------+
+| [ SAVE CONTACT (vCard)]| <-- Sticky or Top CTA
++-----------------------+
+| [ FEATURED LINK 1 ]   |
+| [ LINK 2          ]   |
+| [ LINK 3          ]   |
++-----------------------+
+|    [ LEAD FORM ]      |
+| Name: [_______]       |
+| Email: [_______]      |
+| [ GET FREE GUIDE ]    |
++-----------------------+
+| [ SOCIAL ICONS ]      |
++-----------------------+
+```
+
+### B. User Dashboard (Modern UI)
+```text
++---------------------------------------+
+| Welcome, User      [🌙 Dark Mode]     |
+| [ My link: domain.com/user ] [ Copy ] |
++---------------------------------------+
+| [ Links ] [ Profile ] [ Branding ]    |
+| [ Share ] [ Leads ]   [ Analytics ]   |
++---------------------------------------+
+| [ BLOCK PICKER: 🔗 🎬 ⭐ ❓ 💰 🖼️ ... ] |
++---------------------------------------+
+| Add New Block:                        |
+| [ Title ] [ URL ] [ ( + ) ADD ]       |
++---------------------------------------+
+| Manage CRM (Leads):                   |
+| | Name   | Email | Status | Actions | |
+| | John D | j@d.c | [NEW]  | [View]  | |
++---------------------------------------+
+```
+
+## 4. Logic Flows
+- **User Signup:** Creates a WP User + empty Profile CPT.
+- **Link Creation:** Links are stored as 'Link' CPT items associated with a 'Profile' or User ID.
+- **Lead Capture:** Form submission triggers an AJAX call, saves to 'Lead' CPT, and sends email/webhook.
+- **Analytics:** Each visit/click increments a record in the custom analytics table.
+
+## 5. NFC Implementation Logic (Future)
+
+**The Hardware:** Any NTAG213/215 chip-enabled business card.
+
+**The Workflow:**
+1. **NFC Card Encoding:** The card is encoded with the URL `https://yourdomain.com/username?src=nfc`.
+2. **The Landing Logic:**
+   - When scanned, the profile loads.
+   - The system detects the `?src=nfc` parameter and triggers a "Profile Viewed from NFC" event.
+3. **The Instant Action:**
+   - On NFC-enabled mobile devices, if the user has the "Instant vCard" setting on, the browser will automatically trigger the vCard download after 2 seconds.
+   - This provides a "seamless" digital contact exchange experience.
+
+**NFC Encoding Logic (PHP/Python Stub):**
+```php
+// Encode URL for NFC chip
+$profile_url = home_url( '/' . $user_slug );
+$nfc_data = NDEF_encode_url( $profile_url . '?src=nfc' );
+// Send to NFC card printer via API
+```

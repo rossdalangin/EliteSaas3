@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite SaaS Homepage & Mobile Menu Verification</title>
+    <link rel="stylesheet" href="../saas-profile-theme/style.css">
+    <style>
+        /* Mocking dynamic variables normally injected by PHP */
+        :root {
+            --primary-color: #4f46e5;
+            --primary-light: #6366f1;
+            --primary-dark: #3730a3;
+            --primary-btn-text: #ffffff;
+        }
+
+        /* Ensure the mock looks like the real site */
+        body { margin: 0; padding: 0; }
+
+        /* Helper to visualize centering */
+        .debug-center-line {
+            position: fixed;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 1px;
+            background: rgba(255, 0, 0, 0.3);
+            z-index: 9999;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="theme-light">
+
+    <div class="debug-center-line"></div>
+
+    <header class="site-header">
+        <div class="header-container mx-auto">
+            <a href="#" class="site-branding-link">KnotBio</a>
+
+            <nav class="main-navigation" id="primary-menu">
+                <ul class="primary-menu-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+                <div class="mobile-only-cta">
+                    <a href="#" class="header-cta-link">Login</a>
+                    <a href="#" class="saas-link-btn style-featured btn-header-cta">Get Started Free</a>
+                </div>
+            </nav>
+
+            <div class="header-cta">
+                <a href="#" class="header-cta-link">Login</a>
+                <button class="saas-link-btn style-featured btn-header-cta">Get Started Free</button>
+            </div>
+
+            <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="landing-main">
+        <div class="animated-mesh-bg">
+            <div class="mesh-circle-1"></div>
+            <div class="mesh-circle-2"></div>
+        </div>
+
+        <div class="landing-content mx-auto">
+            <div class="hero-grid-layout">
+                <div class="hero-text-content">
+                    <div class="badge-ui mb-24">The Elite Standard 1%</div>
+                    <h1 class="landing-title">Launch your digital identity in 60 seconds.</h1>
+                    <p class="landing-hero-text">Combine your link-in-bio, business card, and lead magnets into one high-performance page.</p>
+
+                    <div class="hero-claim-wrapper">
+                        <div class="hero-claim-form">
+                            <span class="hero-claim-prefix">knotbio.com/</span>
+                            <input type="text" placeholder="yourname" class="hero-claim-input">
+                            <button class="hero-claim-btn">Get Started Free</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual-content">
+                    <div class="hero-image-perspective">
+                        <div style="background: #fff; width: 400px; height: 300px; border-radius: 40px; box-shadow: 0 50px 100px rgba(108, 92, 231, 0.3); display: flex; align-items: center; justify-content: center; font-weight: 900; color: #4f46e5;">
+                            Product Preview Mockup
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Simple toggle for mobile menu testing
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            const nav = document.querySelector('.main-navigation');
+            const isExpanded = this.getAttribute('aria-expanded') === 'true';
+            this.setAttribute('aria-expanded', !isExpanded);
+            nav.classList.toggle('is-active');
+            document.body.classList.toggle('menu-open');
+        });
+    </script>
+
+</body>
+</html>
