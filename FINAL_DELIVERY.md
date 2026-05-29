@@ -31,7 +31,7 @@ Built as a **WordPress Theme + Companion Plugin hybrid**, this architecture ensu
 Unlike Linktree (which is just a list) or Kontak.me (which is just a card), this system is a **Funnel-in-Bio**. It bridges the gap between social traffic and bottom-line revenue.
 
 ### B. Offer Structure
-| Feature | Free | Elite Pro ($19/mo) | Agency ($49/mo) |
+| Feature | Foundational | Elite Command ($19/mo) | Empire Scale  ($49/mo) |
 | :--- | :--- | :--- | :--- |
 | Profiles | 1 | Unlimited | Unlimited |
 | Analytics | Basic | Real-time Deep Stats | Client Reporting |

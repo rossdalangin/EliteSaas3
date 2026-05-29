@@ -8,7 +8,7 @@ Use these pre-built configurations to maximize conversion for your specific nich
 2. **Video Block:** "Watch my 2-minute intro video."
 3. **Testimonial Block:** 3x client success stories.
 4. **FAQ Block:** "How much is the program?" / "Is this for me?"
-5. **Button Block:** "Book a Free Discovery Call" (Priority CTA).
+5. **Button Block:** "Book a Foundational Discovery Call" (Priority CTA).
 6. **Lead Funnel Block:** "Apply for my coaching program."
 
 ## 2. The Freelancer Portfolio (Visual Proof)

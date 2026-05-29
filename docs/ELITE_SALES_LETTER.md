@@ -61,8 +61,8 @@ Meet **KnotBio**. We didn’t build another "link tree." We built a tactical con
 **The Epiphany:** She saw a peer use an NFC card and realize her cards were ending up in the trash.
 **The Victory:** She now uses the KnotBio NFC protocol. Her database grows by 5 people every weekend without her touching a computer.
 
-### Story 3: The Scaling Agency
-**The Struggle:** "High-End Agency" looked like a budget freelancer because of their basic bio link.
+### Story 3: The Scaling Empire
+**The Struggle:** "High-End Empire" looked like a budget freelancer because of their basic bio link.
 **The Epiphany:** Branding isn't just a logo; it's the entire experience.
 **The Victory:** The 'Luxury' theme matched their high-ticket pricing perfectly. Their cost per lead dropped by 40% because of instant trust.
 
@@ -70,7 +70,7 @@ Meet **KnotBio**. We didn’t build another "link tree." We built a tactical con
 
 ## THE GAP (The Undeniable Math)
 
-| Feature | KnotBio Engine | DIY Website | Basic Link Hubs | Doing Nothing |
+| Feature | KnotBio Engine | DIY Website | Foundational Hubs | Doing Nothing |
 | :--- | :--- | :--- | :--- | :--- |
 | **Lead Capture** | ✅ Integrated | ❌ Hard to setup | ❌ No | ❌ No |
 | **A/B Testing** | ✅ Automated | ❌ Complex | ❌ No | ❌ No |

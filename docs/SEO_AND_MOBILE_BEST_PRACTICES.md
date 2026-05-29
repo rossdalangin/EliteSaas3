@@ -34,7 +34,7 @@ In a world where 80% of traffic is mobile, a "good" mobile site isn't enough. It
 ## 💡 USER TIPS FOR SEO SUCCESS
 - **Keywords in Headline:** Include your primary niche keyword (e.g., "Business Coach" or "Real Estate Expert") in your profile headline.
 - **High-Quality Avatar:** Use a clear, professional headshot. Search engines now index images and high-quality files boost your "trust" score.
-- **Custom Domain:** Upgrade to the Pro plan to use a custom domain. Google favors root domains (links.yourbrand.com) over shared paths.
+- **Custom Domain:** Upgrade to the Elite plan to use a custom domain. Google favors root domains (links.yourbrand.com) over shared paths.
 
 ---
 *Build for users. Optimize for engines. Join the Elite.*

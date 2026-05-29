@@ -44,7 +44,7 @@ class Saas_Admin_Settings {
 
         $faqs = [
             ['q' => 'Is this better than a standard link-in-bio tool?', 'a' => 'Yes. Standard tools are just lists. We are a conversion system designed to capture contact info and build trust.'],
-            ['q' => 'Can I use my own domain?', 'a' => 'Absolutely. Elite Pro users can map their own custom domain or subdomain (e.g., links.yourbrand.com).'],
+            ['q' => 'Can I use my own domain?', 'a' => 'Absolutely. Elite Command users can map their own custom domain or subdomain (e.g., links.yourbrand.com).'],
             ['q' => 'How does the lead capture work?', 'a' => 'You can add a form block to your profile. All submissions are saved in your dashboard and can be sent to your CRM via webhooks.']
         ];
 
@@ -57,16 +57,16 @@ class Saas_Admin_Settings {
 
         $pricing = [
             [
-                'name' => 'Free', 'price' => '$0', 'period' => 'forever', 'cta' => 'Join the Elite Free', 'link' => '/register', 'style' => 'light',
-                'features' => ['1 Authority Engine', 'Standard Blocks', 'Basic Tracking', 'Community Access']
+                'name' => 'Foundational', 'price' => '$0', 'period' => 'forever', 'cta' => 'Join the Elite Foundational', 'link' => '/register', 'style' => 'light',
+                'features' => ['1 Authority Engine', 'Foundational Blocks', 'Basic Tracking', 'Community Access']
             ],
             [
-                'name' => 'Elite Pro', 'price' => '$19', 'period' => '/mo', 'cta' => 'Yes! Upgrade My Engine', 'link' => '/register?plan=pro', 'style' => 'featured', 'badge' => 'FOR THE ELITE 1%',
-                'features' => ['Everything in Free', 'Unlimited Premium Blocks', 'Lead Generation CRM', 'Custom Domain Mapping', 'Whitelabel (No Branding)', 'Priority VIP Support']
+                'name' => 'Elite Command', 'price' => '$19', 'period' => '/mo', 'cta' => 'Yes! Upgrade My Engine', 'link' => '/register?plan=pro', 'style' => 'featured', 'badge' => 'FOR THE ELITE 1%',
+                'features' => ['Everything in Foundational', 'Unlimited Elite Blocks', 'Lead Generation CRM', 'Custom Domain Mapping', 'Whitelabel (No Branding)', 'Priority VIP Support']
             ],
             [
-                'name' => 'Agency Unlimited', 'price' => '$49', 'period' => '/mo', 'cta' => 'Scale My Empire', 'link' => '/register?plan=agency', 'style' => 'light',
-                'features' => ['Everything in Pro', 'Unlimited Client Funnels', 'API & Webhook Access', 'White-label Client Dashboards', 'Dedicated Growth Manager']
+                'name' => 'Empire Scale', 'price' => '$49', 'period' => '/mo', 'cta' => 'Scale My Empire', 'link' => '/register?plan=agency', 'style' => 'light',
+                'features' => ['Everything in Elite Command', 'Unlimited Client Funnels', 'API & Webhook Access', 'White-label Client Dashboards', 'Dedicated Growth Manager']
             ]
         ];
 
@@ -679,7 +679,7 @@ class Saas_Admin_Settings {
 
     public function render_user_columns( $val, $column, $user_id ) {
         if ( $column === 'saas_plan' ) {
-            $plan = get_user_meta($user_id, '_saas_subscription_plan', true) ?: 'Free';
+            $plan = get_user_meta($user_id, '_saas_subscription_plan', true) ?: 'Foundational';
             $color = ($plan === 'pro') ? '#10b981' : '#666';
             return '<strong style="color:'.$color.';">'.strtoupper($plan).'</strong>';
         }
@@ -1657,7 +1657,7 @@ class Saas_Admin_Settings {
         if ( ! current_user_can( 'manage_options' ) ) return;
 
         if ( isset($_GET['pro_content_applied']) ) {
-            echo '<div class="updated notice is-dismissible"><p>Elite Pro Copy has been applied to your homepage! 🚀</p></div>';
+            echo '<div class="updated notice is-dismissible"><p>Elite Command Copy has been applied to your homepage! 🚀</p></div>';
         }
         if ( isset($_GET['pages_generated']) ) {
             echo '<div class="updated notice is-dismissible"><p>System pages and templates generated successfully!</p></div>';
@@ -1796,7 +1796,7 @@ class Saas_Admin_Settings {
                 <div id="tab-home-editor" class="tab-content" style="display:none; padding:20px; background:#fff; border:1px solid #ddd;">
                     <h3>Elite Sales Copy Setup</h3>
                     <p>Populate your homepage with professional copy designed by elite marketers.</p>
-                    <a href="<?php echo admin_url('admin-post.php?action=saas_populate_pro_content'); ?>" class="button button-primary" style="background:#10b981; border-color:#10b981; color:#fff;">🔥 Apply Pro Sales Copy Now</a>
+                    <a href="<?php echo admin_url('admin-post.php?action=saas_populate_pro_content'); ?>" class="button button-primary" style="background:#10b981; border-color:#10b981; color:#fff;">🔥 Apply Elite Sales Copy Now</a>
                     <hr>
                     <p>Use the General Settings tab to manually edit homepage titles, descriptions, and JSON content.</p>
                 </div>

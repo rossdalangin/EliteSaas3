@@ -47,7 +47,7 @@
             if ($(this).hasClass('pro-gated-inline') && !$(e.target).is('input, select, textarea')) return;
             e.preventDefault();
             e.stopPropagation();
-            if (confirm('This feature is only available for Elite Pro users. Would you like to view our Pro plans?')) {
+            if (confirm('This feature is only available for Elite Command users. Would you like to view our upgrade plans?')) {
                 switchTab('billing');
             }
         });
@@ -255,7 +255,7 @@
         });
 
         $(document).on('click', '#saas-demo-upgrade-btn', function() {
-            if(!confirm('This will simulate a successful payment and grant you Pro access. Continue?')) return;
+            if(!confirm('This will simulate a successful payment and grant you Elite access. Continue?')) return;
             saasFetch('saas_simulate_pro_upgrade', {}, $(this)).done(function(msg) {
                 alert(msg);
                 location.reload();
@@ -273,7 +273,7 @@
                 contentType: 'application/json',
                 data: JSON.stringify({ user_id: userId, status: 'succeeded', plan: 'pro' }),
                 success: function(res) {
-                    alert('Webhook processed successfully! You are now Pro.');
+                    alert('Webhook processed successfully! You are now Elite.');
                     location.reload();
                 },
                 error: function() { alert('Webhook simulation failed.'); }

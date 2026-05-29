@@ -12,7 +12,7 @@ Most people use "link in bio" tools as digital graveyards—a messy list of butt
 ## PHASE 2: CONVERSION ARCHITECTURE
 - **The "Featured" Pulse:** Apply the 'Featured' pulse animation to your primary offer. This visual cue guides attention and has been shown to significantly increase click-through rates.
 - **The Lead Capture Protocol:** Never settle for a simple click. Deploy a Lead Form block above the fold. In the elite consulting economy, a name and email are 10x more valuable than a raw page view.
-- **Dynamic CSS (Pro):** For users who require absolute brand alignment, use the Custom CSS tab to override any visual element. This is your "White Label" power move.
+- **Dynamic CSS  (Elite Command):** For users who require absolute brand alignment, use the Custom CSS tab to override any visual element. This is your "White Label" power move.
 
 ## PHASE 3: COMMAND & CONTROL (The Vibe)
 - **Luxury & Glass Themes:** If you sell high-ticket services ($2k+), your digital identity must match your pricing. Use the "Luxury" or "Modern Glass" themes to establish premium authority.
@@ -20,7 +20,7 @@ Most people use "link in bio" tools as digital graveyards—a messy list of butt
 - **Auto-Contrast Engine:** Our system automatically optimizes text legibility based on your background choices. Whether you go Midnight Neon or Clean Minimal, your message remains razor-sharp.
 
 ## PHASE 4: THE AFFILIATE FRANCHISE (The Earn Tab)
-Don't just use the platform—own the growth. share your referral link and earn **30% recurring commission** for the lifetime of every expert you refer. Just 4 referrals covers your entire Pro subscription. 10 referrals turns your KnotBio profile into a passive income stream.
+Don't just use the platform—own the growth. share your referral link and earn **30% recurring commission** for the lifetime of every expert you refer. Just 4 referrals covers your entire Elite Command subscription. 10 referrals turns your KnotBio profile into a passive income stream.
 
 ---
 *Stop Building on Rented Land. Build Your Authority Engine. Join the Elite at KnotBio.com.*

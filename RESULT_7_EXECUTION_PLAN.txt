@@ -22,7 +22,7 @@
 - **Week 9:** Introduce "Industry Packs" (e.g., Real Estate Pack, Med-Spa Pack).
 - **Week 10:** Implement the "Migration Tool" (Automated import from Linktree/Carrd).
 - **Week 11:** Launch the "KnotBio Directory"—a curated list of all high-ticket pros using the platform (SEO booster for users).
-- **Week 12:** Upsell existing free users to "Elite Pro" for custom domains and advanced tracking.
+- **Week 12:** Upsell existing free users to "Elite Command" for custom domains and advanced tracking.
 - **Goal:** 500+ Active Profiles, $1,000+ MRR.
 
 ## KPI TRACKING

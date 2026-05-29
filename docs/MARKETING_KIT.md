@@ -10,7 +10,7 @@ When you promote KnotBio, don't sell "links." Sell the **Strategic Transformatio
 - **Lead Capture Terminal ($997 Value):** Stop manual follow-ups. Build a proprietary asset.
 - **Strategic Edge Routing ($497 Value):** Smart tech that optimizes the journey for iOS/Android.
 - **NFC Elite Connectivity ($197 Value):** One tap, permanent connection. The last card you'll ever need.
-- **Elite Customizer (Pro) ($497 Value):** Full CSS control for absolute brand alignment.
+- **Elite Customizer  (Elite Command) ($497 Value):** Full CSS control for absolute brand alignment.
 - **Verified Authority Badge ($297 Value):** Instant social proof and elite positioning.
 **Total Perceived Value: $4,482.**
 **Investment Today: Just $19.**

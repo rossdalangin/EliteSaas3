@@ -9,9 +9,9 @@
 - **Email 3: The Fork in the Road (Own or Rent?).**
 "There are two types of experts. Those who build on rented land (social platforms) and those who own their digital real estate. One stays stuck. The other scales. Which one are you? Take your path here: [Link]"
 
-## CAMPAIGN 2: THE "ELITE" UPGRADE (For Free Users)
+## CAMPAIGN 2: THE "ELITE" UPGRADE (For Foundational Users)
 - **Subject:** Ready to remove our logo?
-- **Body:** "You've built your profile. Now it's time to own it. Your brand deserves to be the star, not our software. Elite Pro users get custom domains, tracking pixels, and zero branding. Take the next step toward total authority here: [Link]"
+- **Body:** "You've built your profile. Now it's time to own it. Your brand deserves to be the star, not our software. Elite Command users get custom domains, tracking pixels, and zero branding. Take the next step toward total authority here: [Link]"
 
 ---
 *Close the loop. Join the Elite.*

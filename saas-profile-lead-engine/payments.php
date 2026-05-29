@@ -29,7 +29,7 @@ class Saas_Payments {
     }
 
     /**
-     * Check if user has Pro features
+     * Check if user has Elite features
      */
     public function is_pro_user( $user_id ) {
         $plan = get_user_meta( $user_id, '_saas_subscription_plan', true );
@@ -42,7 +42,7 @@ class Saas_Payments {
     }
 
     /**
-     * Check if user is on Agency tier
+     * Check if user is on Empire Scale tier
      */
     public function is_agency_user( $user_id ) {
         $plan = get_user_meta( $user_id, '_saas_subscription_plan', true );
@@ -105,7 +105,7 @@ class Saas_Payments {
             // Mock API call to Stripe
             $session = [ 'url' => 'https://checkout.stripe.com/pay/mock_session_id' ];
 
-            // For Pro Plan checkouts in this elite system, we create a pending order
+            // For Elite Command Plan checkouts in this elite system, we create a pending order
             $order_id = wp_insert_post([
                 'post_type' => 'saas_order',
                 'post_title' => ($is_product ? 'Product Sale: ' : 'Plan Upgrade: ') . $plan_id,

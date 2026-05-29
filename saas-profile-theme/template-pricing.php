@@ -13,16 +13,16 @@ $plans = json_decode($pricing_json, true);
 if (!$plans) {
     $plans = [
         [
-            'name' => 'Free', 'price' => '$0', 'period' => 'forever', 'cta' => 'Join for Free', 'link' => '/register', 'style' => 'light',
-            'features' => ['1 Authority Engine', 'Standard Blocks', 'Basic Analytics', 'Community Support']
+            'name' => 'Foundational', 'price' => '$0', 'period' => 'forever', 'cta' => 'Claim Your Identity', 'link' => '/register', 'style' => 'light',
+            'features' => ['1 Authority Engine', 'Foundational Blocks', 'Foundational Analytics', 'Community Support']
         ],
         [
-            'name' => 'Elite Pro', 'price' => '$19', 'period' => '/mo', 'cta' => 'Upgrade to Pro', 'link' => '/register?plan=pro', 'style' => 'featured', 'badge' => 'MOST POPULAR',
-            'features' => ['Everything in Free', 'Unlimited Premium Blocks', 'Lead Generation CRM', 'Custom Domain Mapping', 'Priority Support']
+            'name' => 'Elite Command', 'price' => '$19', 'period' => '/mo', 'cta' => 'Invest in Authority', 'link' => '/register?plan=pro', 'style' => 'featured', 'badge' => 'FOR THE ELITE 1%',
+            'features' => ['Everything in Foundational', 'Unlimited Elite Blocks', 'Lead Generation CRM', 'Custom Domain Mapping', 'Priority Support']
         ],
         [
-            'name' => 'Agency Unlimited', 'price' => '$49', 'period' => '/mo', 'cta' => 'Go Unlimited', 'link' => '/register?plan=agency', 'style' => 'light',
-            'features' => ['Everything in Pro', 'Unlimited Sub-accounts', 'API Access', 'White-label Client Funnels', 'Dedicated Manager']
+            'name' => 'Empire Scale', 'price' => '$49', 'period' => '/mo', 'cta' => 'Scale Your Empire', 'link' => '/register?plan=agency', 'style' => 'light',
+            'features' => ['Everything in Elite Command', 'Unlimited Sub-accounts', 'API Access', 'White-label Client Funnels', 'Dedicated Manager']
         ]
     ];
 }
@@ -38,7 +38,8 @@ if (!$plans) {
         <div class="stats-grid">
             <?php foreach ($plans as $p) :
                 $is_featured = (isset($p['style']) && $p['style'] === 'featured');
-                $check_color_class = $is_featured ? 'check-white' : 'check-green';
+                $is_empire = (strpos(strtolower($p['name']), 'empire') !== false);
+                $check_color_class = $is_featured ? 'check-white' : ($is_empire ? 'check-gold' : 'check-green');
             ?>
                 <div class="pricing-plan-card <?php echo $is_featured ? 'is-featured' : 'is-light'; ?> flex-column">
                     <?php if (isset($p['badge']) && !empty($p['badge'])) : ?>
@@ -56,7 +57,12 @@ if (!$plans) {
                             </li>
                         <?php endforeach; ?>
                     </ul>
-                    <a href="<?php echo home_url($p['link']); ?>" class="saas-link-btn <?php echo $is_featured ? 'cta-pro-featured' : 'style-featured'; ?>"><?php echo esc_html($p['cta']); ?></a>
+                    <?php
+                    $btn_class = 'cta-foundational-outline';
+                    if ($is_featured) $btn_class = 'cta-pro-featured premium-shimmer';
+                    if ($is_empire) $btn_class = 'cta-empire-gold premium-shimmer';
+                    ?>
+                    <a href="<?php echo home_url($p['link']); ?>" class="saas-link-btn <?php echo $btn_class; ?>"><?php echo esc_html($p['cta']); ?></a>
                 </div>
             <?php endforeach; ?>
         </div>

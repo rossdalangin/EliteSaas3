@@ -117,7 +117,7 @@ function saas_ajax_submit_lead() {
         $admin_body    = str_replace(array_keys($replacements), array_values($replacements), $tpl_admin['body']);
         wp_mail($owner_email, $admin_subject, $admin_body, $headers);
 
-        // B. Elite Pro Auto-responder to Lead
+        // B. Elite Command Auto-responder to Lead
         $auto_respond = get_post_meta($profile_id, '_saas_lead_auto_respond', true);
         if ($auto_respond) {
             $tpl_lead = $templates['lead_autoresponder'] ?? [

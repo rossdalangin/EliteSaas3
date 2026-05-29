@@ -50,7 +50,7 @@
 37. **The Minimalist Expert** - Hook: "Why less is more in your bio." Body: "One offer. One goal. One client at a time." CTA: "Simplify." #minimalism
 38. **The High-Ticket Secret** - Hook: "The secret to $10k months is in your bio." Body: "It's about having a professional intake system." CTA: "Get the system." #highticket
 39. **The Digital Handshake** - Hook: "Your bio link is your digital handshake." Body: "Is it firm and professional or weak and messy?" CTA: "Firm up your brand." #networking
-40. **The Elite Status** - Hook: "Status is everything in consulting." Body: "Elevate your status with an Elite Profile." CTA: "Upgrade now." #status
+40. **The Elite Status** - Hook: "Status is everything in consulting." Body: "Elevate your status with an Elite Commandfile." CTA: "Upgrade now." #status
 
 ---
 
@@ -86,7 +86,7 @@
 63. **The Done-For-You Advantage** - Hook: "Stop being a web designer." Body: "You're a coach. Do your job, let us do ours." CTA: "Hire the pros." #outsourcing
 64. **The 2-Week Launch** - Hook: "How we launch high-end sites in 2 weeks." Body: "No more 6-month projects. Speed is power." CTA: "Start your project." #webdev
 65. **The Conversion Audit** - Hook: "I'll audit your website for free." Body: "See where you're losing money. Then let us fix it." CTA: "Book a call." #audit
-66. **The Agency Secret** - Hook: "Agencies charge $20k for what we do for $5k." Body: "We specialize in one thing: Coaches and Consultants." CTA: "Save $15k." #agencysecret
+66. **The Empire Secret** - Hook: "Consultancies charge $20k for what we do for $5k." Body: "We specialize in one thing: Coaches and Consultants." CTA: "Save $15k." #agencysecret
 67. **The Tech Headache Cure** - Hook: "I have the cure for your tech headache." Body: "Full management. No plugins to update. Just leads." CTA: "CloseClient.com." #nocode
 68. **The High-End Experience** - Hook: "Invite your clients to a luxury showroom." Body: "Your website is your digital office. Make it premium." CTA: "Elevate." #luxuryweb
 69. **The Lead Machine** - Hook: "We don't build websites. We build lead machines." Body: "Every pixel is designed to get you a client." CTA: "Get your machine." #leadgen
@@ -100,13 +100,13 @@
 77. **The Tracking Pixel Master** - Hook: "Stop flying blind with your ads." Body: "We set up all your tracking perfectly." CTA: "Track better." #ads
 78. **The CRM Integration** - Hook: "Does your website talk to your CRM?" Body: "It should. We make it happen." CTA: "Integrate now." #crm
 79. **The User Experience** - Hook: "UX is the new SEO." Body: "Make it easy to buy, and people will buy more." CTA: "Improve UX." #uxdesign
-80. **The Final Choice** - Hook: "Fiverr or a Conversion Agency?" Body: "You get what you pay for. Choose results." CTA: "Choose CloseClient." #businessgrowth
+80. **The Final Choice** - Hook: "Fiverr or a Elite Consultancy?" Body: "You get what you pay for. Choose results." CTA: "Choose CloseClient." #businessgrowth
 
 ---
 
 ## 📱 CATEGORY 5: NETWORKING & THE FUTURE (SCRIPTS 81-100)
 
-81. **The Magic Tap** - Hook: "I closed a $5,000 deal with one tap." Body: "NFC card + Elite Profile = Contact saved forever." CTA: "Get NFC." #nfc
+81. **The Magic Tap** - Hook: "I closed a $5,000 deal with one tap." Body: "NFC card + Elite Commandfile = Contact saved forever." CTA: "Get NFC." #nfc
 82. **Stop Being Forgotten** - Hook: "How to never be forgotten at an event." Body: "Paper cards end up in the bin. Digital stays in the phone." CTA: "Be memorable." #networking
 83. **The Future of Business Cards** - Hook: "Business cards are officially dead." Body: "This is the replacement. And it's 10x better." CTA: "See the future." #future
 84. **The One-Tap Contact** - Hook: "One tap to contact." Body: "No typing, no errors. Just instant connection." CTA: "Link in bio." #techhacks

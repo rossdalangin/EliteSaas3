@@ -11,9 +11,9 @@ Unlike Linktree (just links) or Kontak (just contact info), we combine identity 
 - **Public Figures/Politicians:** Centralized hub for news, socials, and constituent inquiries.
 
 ## 2. Offer Structure
-- **Free Tier:** 1 Profile, 5 Links, Basic Analytics, "Powered by" branding.
-- **Pro Tier ($19/mo):** Unlimited Links, Lead Gen Form, Custom Themes, No Branding, Priority Support.
-- **Agency Tier ($99/mo):** Manage up to 10 Profiles, Team Access, Webhook Integrations, API Access.
+- **Foundational Tier:** 1 Foundational Profile, 5 Links, Foundational Analytics, "Powered by" branding.
+- **Elite Command Tier ($19/mo):** Unlimited Links, Lead Gen Form, Custom Themes, No Branding, Priority Support.
+- **Empire Scale Tier ($99/mo):** Manage up to 10 Profiles, Team Access, Webhook Integrations, API Access.
 
 ## 3. Full Video Sales Letter (VSL) Script (High-Conversion)
 
@@ -36,7 +36,7 @@ Unlike Linktree (just links) or Kontak (just contact info), we combine identity 
 "Our users are seeing a 300% increase in lead capture compared to standard link lists. Whether you're a coach, a realtor, or a freelancer, your bio link is your most valuable real estate. Stop wasting it."
 
 **[4:30-End] The Call to Action**
-"We’re currently offering a limited-time 'Pro' lifetime deal for our early adopters. Get unlimited links, custom themes, and full lead generation capabilities for one tiny investment. Click the button below, claim your custom username, and turn your bio link into a lead machine today."
+"We’re currently offering a limited-time 'Elite' lifetime deal for our early adopters. Get unlimited links, custom themes, and full lead generation capabilities for one tiny investment. Click the button below, claim your custom username, and turn your bio link into a lead machine today."
 
 ## 4. Sales Assets (Landing Page Copy)
 - **Headline:** "Turn Your 'Link in Bio' Into a Lead Machine."
