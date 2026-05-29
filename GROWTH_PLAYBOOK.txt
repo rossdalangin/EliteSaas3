@@ -50,7 +50,7 @@ Direct engagement with high-value targets currently using inferior tools.
 ### TASKS:
 - [ ] Build a list of 50 top-tier coaches in [Niche].
 - [ ] Send personalized DMs focusing on the "Exchange Digital Card" feature.
-- [ ] Offer "Instant Pro Upgrade" for the first 10 migrations to build social proof.
+- [ ] Offer "Instant Elite Upgrade" for the first 10 migrations to build social proof.
 
 ---
 
@@ -60,7 +60,7 @@ Strategies to maximize Average Revenue Per User (ARPU).
 ### STRATEGIST: The Monetization Engineer
 ### APPROACH: Psychological Feature Gating
 ### PROCESS:
-1. FOUNDATIONAL -> ELITE COMMAND: Trigger "Pro-Only" modals when users try to add advanced blocks (Gallery, Calendar).
+1. FOUNDATIONAL -> ELITE COMMAND: Trigger "Elite-Only" modals when users try to add advanced blocks (Gallery, Calendar).
 2. ELITE COMMAND -> EMPIRE SCALE: Offer "Sub-account" management for agencies when they reach 5 profiles.
 3. THE FOMO EFFECT: Show real-time activity popups in the dashboard from OTHER users winning (Social Proof).
 ### TASKS:

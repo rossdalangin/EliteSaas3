@@ -14,11 +14,11 @@ if (!$plans) {
     $plans = [
         [
             'name' => 'Foundational', 'price' => '$0', 'period' => 'forever', 'cta' => 'Claim Your Identity', 'link' => '/register', 'style' => 'light',
-            'features' => ['1 Authority Engine', 'Standard Blocks', 'Basic Analytics', 'Community Support']
+            'features' => ['1 Authority Engine', 'Foundational Blocks', 'Foundational Analytics', 'Community Support']
         ],
         [
             'name' => 'Elite Command', 'price' => '$19', 'period' => '/mo', 'cta' => 'Invest in Authority', 'link' => '/register?plan=pro', 'style' => 'featured', 'badge' => 'FOR THE ELITE 1%',
-            'features' => ['Everything in Foundational', 'Unlimited Premium Blocks', 'Lead Generation CRM', 'Custom Domain Mapping', 'Priority Support']
+            'features' => ['Everything in Foundational', 'Unlimited Elite Blocks', 'Lead Generation CRM', 'Custom Domain Mapping', 'Priority Support']
         ],
         [
             'name' => 'Empire Scale', 'price' => '$49', 'period' => '/mo', 'cta' => 'Scale Your Empire', 'link' => '/register?plan=agency', 'style' => 'light',

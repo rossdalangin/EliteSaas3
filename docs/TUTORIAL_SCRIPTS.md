@@ -27,7 +27,7 @@ Instant authority. Glassmorphism aesthetic. This is the Elite Standard. Deploy y
 [Scene: 'Earn' Command Center]
 You have a unique referral link. We compensate our partners with a 30% recurring commission—for the lifetime of the user.
 
-Refer 4 peers, and your Pro subscription is covered forever. Refer 10, and you've built a passive income pillar.
+Refer 4 peers, and your Elite Command subscription is covered forever. Refer 10, and you've built a passive income pillar.
 
 [Scene: Financial Intelligence Table]
 Monitor your active referrals and accruals in real-time. Reach the $50 threshold and trigger a payout directly to your base of operations.

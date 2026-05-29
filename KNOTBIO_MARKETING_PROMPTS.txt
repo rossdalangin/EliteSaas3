@@ -1,0 +1,59 @@
+# KNOTBIO.COM - ELITE MARKETING IMAGE PROMPTS
+# Optimized for Midjourney v6, DALL-E 3, and Adobe Firefly
+
+---
+
+## 1. WEBSITE BANNER ADS (Elite Hero Sections)
+**Focus:** Professionalism, High Conversion, Authority.
+
+**Prompt 1: The Modern Glass Command Center (Wide Banner)**
+> Wide-angle cinematic shot of a clean, minimalist executive desk. A floating 3D "Glassmorphism" interface showing a KnotBio digital profile is hovering above a sleek MacBook Pro. The UI has glowing indigo buttons (#4F46E5) and sharp typography. In the background, a blurred high-end metropolitan office at twilight. Hyper-realistic, 8k, Octane render, luxury tech aesthetic, cinematic lighting.
+
+**Prompt 2: The Empire Scale Vision (Wide Banner)**
+> Abstract architectural visualization of a glowing digital "empire" made of crystalline nodes and connections. Gold light (#D4AF37) flowing through a network of professional profiles. High-contrast deep slate background. Elegant, powerful, representative of "Scaling Your Empire." 3D isometric view, ultra-detailed, gold and indigo accents, 16:9 aspect ratio.
+
+---
+
+## 2. SOCIAL MEDIA COVER IMAGES (LinkedIn, Twitter/X, Facebook)
+**Focus:** Brand Identity, Social Proof, Professional Network.
+
+**Prompt 3: The Elite Networking Hub (LinkedIn Cover)**
+> Minimalist abstract background for a professional networking platform. Flowing digital silk in deep indigo and gold. Subtle patterns of interconnected nodes. Elegant, spacious, plenty of room for text on the left side. High-end professional vibe, clean and sophisticated. --ar 3:1
+
+**Prompt 4: The Creator's Digital Identity (Twitter/X Header)**
+> Collage of various high-end smartphone mockups, each displaying a different niche-optimized KnotBio profile (Coach, Agency, Founder). Each screen uses a different premium theme: 'Luxury', 'Modern Glass', and 'Midnight Neon'. Dynamic composition, vibrant but professional colors, studio lighting. --ar 3:1
+
+---
+
+## 3. FACEBOOK & INSTAGRAM AD IMAGES (Square & Vertical)
+**Focus:** Attention-Grabbing, Problem/Solution, High Contrast.
+
+**Prompt 5: The "Digital Handshake" (Facebook Square Ad)**
+> Close-up shot of two hands meeting in a firm, professional handshake. Between the hands, a subtle golden glow represents a digital exchange. Next to them, a smartphone displays a "New Lead Captured" notification from KnotBio.com. High-contrast, warm professional lighting, cinematic style.
+
+**Prompt 6: The Bio Link Upgrade (Instagram Story / Vertical Ad)**
+> A split-screen comparison. Top half: A messy, boring list of links on a plain white screen (labeled "Old Way"). Bottom half: A stunning, animated KnotBio "Elite Command" profile with a beautiful hero image, lead capture form, and premium buttons (labeled "The Elite Way"). High-energy, vibrant colors, "Before vs After" marketing style.
+
+---
+
+## 4. BLOG & CONTENT MARKETING IMAGES
+**Focus:** Narrative, Educational, Visual Interest.
+
+**Prompt 7: The Future of Personal Branding (Blog Featured Image)**
+> A futuristic interpretation of a digital "Identity Card." A floating holographic card showing a professional's face, social links, and a "Contact Me" button. The card is made of light and data. Deep slate background with ambient purple and gold glows. Sharp focus, hyper-detailed, tech-noir aesthetic.
+
+---
+
+## 5. RELEVANT BRAND HEX CODES (For AI Refinement)
+- **Elite Indigo:** #4F46E5
+- **Empire Gold:** #D4AF37
+- **Success Emerald:** #10B981
+- **Midnight Slate:** #0F172A
+
+---
+
+## PRO TIP: ASPECT RATIOS
+- **Facebook/Instagram Ads:** Use `--ar 1:1` or `--ar 4:5`
+- **LinkedIn/Twitter Covers:** Use `--ar 3:1`
+- **Website Banners:** Use `--ar 21:9` or `--ar 16:9`
+- **Instagram Stories:** Use `--ar 9:16`

@@ -62,7 +62,7 @@
 ## 6. PRICING & OFFER STACKS
 - **FOUNDING MEMBER OFFER**: 50% Lifetime discount + "Elite" badge on profile + Priority onboarding.
 - **THE STACK**:
-  - Elite Pro Software ($19/mo value)
+  - Elite Command Software ($19/mo value)
   - Funnel Building Masterclass ($197 value)
   - 10x Niche Lead Magnet Templates ($97 value)
   - **Price**: $19/mo (or $149/yr)

@@ -1036,7 +1036,7 @@ function saas_ajax_generate_samples() {
         ],
         // 12. FREELANCER: Alex Designer (Creative Expert)
         [
-            'title' => 'Elite Product Design',
+            'title' => 'Elite Commandduct Design',
             'headline' => 'Solving Problems Through Visual Craft 🎨',
             'bio' => "Ex-FAANG Senior Designer. I help startups build scalable design systems and intuitive user experiences that convert high-value leads.",
             'color' => '#475569', 'theme' => 'light', 'shadow' => 'soft', 'niche' => 'freelancer',
@@ -1259,7 +1259,7 @@ function saas_ajax_check_username() {
     wp_send_json_success('Available');
 }
 
-// 21. AJAX: Simulate Pro Upgrade
+// 21. AJAX: Simulate Elite Upgrade
 add_action( 'wp_ajax_saas_simulate_pro_upgrade', 'saas_ajax_simulate_pro_upgrade' );
 function saas_ajax_simulate_pro_upgrade() {
     check_ajax_referer( 'saas_dashboard_nonce', 'security' );

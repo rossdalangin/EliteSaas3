@@ -30,7 +30,7 @@ Our architecture is designed to do three things:
 ---
 
 ## 4. THE FEATURES (Why We Are Different)
-- **Niche-Specific Overlays:** Whether you're a Coach, Agency Owner, or Podcaster, your profile adapts to your industry's conversion psychology.
+- **Niche-Specific Overlays:** Whether you're a Coach, Empire Architect, or Podcaster, your profile adapts to your industry's conversion psychology.
 - **Auto-Contrast Engine:** Never worry about "white text on light backgrounds" again.
 - **vCard Exchange:** One-tap contact saving for high-end networking.
 - **Hook-Story-Offer Templates:** Pre-built blocks that follow the world's most successful sales frameworks.
@@ -45,7 +45,7 @@ KnotBio removes the guesswork. We’ve baked elite design standards into every b
 ---
 
 ## 6. THE OFFER (Founding Member Special)
-**The Elite Pro Package**
+**The Elite Command Package**
 - Custom Domains
 - Lead CRM & Advanced Analytics
 - All Premium Niche Designs

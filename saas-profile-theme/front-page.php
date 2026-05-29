@@ -113,7 +113,7 @@ $h_img   = get_option('saas_home_image');
     <div class="stats-grid">
         <div class="stat-item">
             <div class="stat-value color-primary"><?php echo number_format($count_profiles + 1250); ?>+</div>
-            <p class="stat-label">Elite Profiles</p>
+            <p class="stat-label">Elite Command.iles</p>
         </div>
         <div class="stat-item">
             <div class="stat-value color-vibrant">$<?php echo number_format(($total_rev / 1000) + 42.5, 1); ?>M+</div>
@@ -271,7 +271,7 @@ if ($comparison_json) : ?>
                 <thead>
                     <tr>
                         <th class="p-30 text-xl">Feature</th>
-                        <th class="p-30 text-xl color-lighter">Basic Link Hubs</th>
+                        <th class="p-30 text-xl color-lighter">Foundational Hubs</th>
                         <th class="p-30 text-xl color-primary font-black">Elite SaaS Funnel</th>
                     </tr>
                 </thead>
@@ -327,11 +327,11 @@ if ($comparison_json) : ?>
             $plans = json_decode($pricing_json, true) ?: [
                 [
                     'name' => 'Foundational', 'price' => '$0', 'period' => 'forever', 'cta' => 'Claim Your Identity', 'link' => '/register', 'style' => 'light',
-                    'features' => ['1 Profile', 'Standard Blocks', 'Basic Analytics', 'Community Support']
+                    'features' => ['1 Foundational Profile', 'Foundational Blocks', 'Foundational Analytics', 'Community Support']
                 ],
                 [
                     'name' => 'Elite Command', 'price' => '$19', 'period' => '/mo', 'cta' => 'Invest in Authority', 'link' => '/register?plan=pro', 'style' => 'featured', 'badge' => 'FOR THE ELITE 1%',
-                    'features' => ['Everything in Foundational', 'Unlimited Premium Blocks', 'Lead Generation CRM', 'Custom Domain Mapping', 'Priority Support']
+                    'features' => ['Everything in Foundational', 'Unlimited Elite Blocks', 'Lead Generation CRM', 'Custom Domain Mapping', 'Priority Support']
                 ],
                 [
                     'name' => 'Empire Scale', 'price' => '$49', 'period' => '/mo', 'cta' => 'Scale Your Empire', 'link' => '/register?plan=agency', 'style' => 'light',

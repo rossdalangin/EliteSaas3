@@ -13,7 +13,7 @@
 1.  **Modular Blocks:** Implement complex types (Video, FAQ, Testimonials, Pricing).
 2.  **Visual Dashboard:** Add the Real-time Mobile Preview using PostMessage API.
 3.  **Payment Gateway:** Integrate Stripe/PayPal stubs and license validation logic.
-4.  **Pro Gating:** Badges, whitelabeling, and restricted block types.
+4.  **Elite Gating:** Badges, whitelabeling, and restricted block types.
 5.  **Analytics:** Set up the custom SQL table for high-performance view/click tracking.
 6.  **Template Engine:** Create niche-specific presets (Coach, Realtor, etc.).
 

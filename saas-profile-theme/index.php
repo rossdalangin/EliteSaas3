@@ -45,7 +45,7 @@ $user_id = $profile->post_author;
 $meta = saas_get_profile_meta( $profile_id );
 $niche = get_post_meta($profile_id, '_saas_niche', true) ?: 'general';
 
-// Check Pro Status (Unified License Check)
+// Check Elite Status (Unified License Check)
 $is_pro = saas_is_profile_licensed($profile_id);
 $is_preview = isset($_GET['preview']) && $_GET['preview'] == '1';
 $bg_type = get_post_meta( $profile_id, '_saas_bg_type', true ) ?: 'flat';
@@ -455,7 +455,7 @@ $global_contrast = saas_get_contrast_color($bg_color);
         <?php endif; ?>
     <?php endif; ?>
 
-    <!-- Growth Branding (Hide for Pro) -->
+    <!-- Growth Branding (Hide for Elite) -->
     <?php
     $hide_branding = get_post_meta($profile_id, '_saas_hide_branding', true);
     $footer_text   = get_post_meta($profile_id, '_saas_footer_text', true);

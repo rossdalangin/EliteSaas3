@@ -17,7 +17,7 @@
 2. **Brand Harmonization:** Upload professional assets and configure the "Vibe" (Luxury, Modern Glass, etc.).
 3. **Conversion Blocks:** Deploy FAQ, Testimonial, and Milestone blocks to establish instant social proof.
 4. **Lead Terminal:** Activate the Lead Generation form to capture high-intent data.
-5. **Custom CSS Overrides (Pro):** Use the dedicated tab for absolute brand precision.
+5. **Custom CSS Overrides  (Elite Command):** Use the dedicated tab for absolute brand precision.
 6. **Command & Control:** Monitor real-time clicks and view-to-lead conversion rates in the **Stats** tab.
 
 ## 4. Advanced System Logic
@@ -27,9 +27,9 @@
 - **Multi-tenant isolation:** Data schemas ensure strict isolation between consultant profiles and strategic data.
 
 ## 5. Deployment & Beyond
-- **Custom Domain Protocol:** Pro users can map subdomains (CNAME) for professional brand alignment.
+- **Custom Domain Protocol:** Elite Command users can map subdomains (CNAME) for professional brand alignment.
 - **NFC Integration:** Native support for NFC taps with dedicated tracking source codes (`?src=nfc`).
-- **Whitelabel Mastery:** Complete removal of platform branding for Agency-tier users.
+- **Whitelabel Mastery:** Complete removal of platform branding for Empire Scale-tier users.
 
 ---
 *Built for the Elite. Engineered for Conversion. KnotBio.com*

@@ -164,7 +164,7 @@ $h_img   = get_option('saas_home_image');
                 <thead>
                     <tr>
                         <th class="p-32 text-xl">Feature</th>
-                        <th class="p-32 text-xl color-lighter">Basic Link Hubs</th>
+                        <th class="p-32 text-xl color-lighter">Foundational Hubs</th>
                         <th class="p-32 text-xl color-primary font-black">Elite SaaS Funnel</th>
                     </tr>
                 </thead>
@@ -208,7 +208,7 @@ $h_img   = get_option('saas_home_image');
         <div class="grid-3 text-center">
             <div class="stat-card-glass">
                 <div class="stat-value-large text-gradient-primary"><?php echo number_format($count_profiles + $p_offset); ?>+</div>
-                <p class="stat-label-elite">Elite Profiles Launched</p>
+                <p class="stat-label-elite">Elite Command Centers Launched</p>
                 <p class="stat-desc-muted">Authority established globally.</p>
             </div>
             <div class="stat-card-glass translate-y-neg-20">
@@ -435,12 +435,12 @@ $h_img   = get_option('saas_home_image');
             $pricing_json = get_option('saas_home_pricing_json');
             $plans = json_decode($pricing_json, true) ?: [
                 [
-                    'name' => 'Foundational', 'price' => '$0', 'period' => 'forever', 'cta' => 'Join for Free', 'link' => '/register', 'style' => 'light',
-                    'features' => ['1 Profile', 'Standard Blocks', 'Basic Analytics', 'Community Support']
+                    'name' => 'Foundational', 'price' => '$0', 'period' => 'forever', 'cta' => 'Join Foundational', 'link' => '/register', 'style' => 'light',
+                    'features' => ['1 Foundational Profile', 'Foundational Blocks', 'Foundational Analytics', 'Community Support']
                 ],
                 [
                     'name' => 'Elite Command', 'price' => '$19', 'period' => '/mo', 'cta' => 'Invest in Authority', 'link' => '/register?plan=pro', 'style' => 'featured', 'badge' => 'FOR THE ELITE 1%',
-                    'features' => ['Unlimited Premium Blocks', 'Lead Generation CRM', 'Custom Domain Mapping', 'Whitelabel Branding', 'Priority Support']
+                    'features' => ['Unlimited Elite Blocks', 'Lead Generation CRM', 'Custom Domain Mapping', 'Whitelabel Branding', 'Priority Support']
                 ],
                 [
                     'name' => 'Empire Scale', 'price' => '$49', 'period' => '/mo', 'cta' => 'Go Unlimited', 'link' => '/register?plan=agency', 'style' => 'dark',
@@ -524,7 +524,7 @@ $h_img   = get_option('saas_home_image');
     <div class="container-narrow mx-auto relative z-1">
         <h2 class="text-5xl font-black mb-20 lh-1-6">Ready to scale your digital presence?</h2>
         <p class="text-2xl opacity-80 mb-40">Join thousands of elite creators who are building their future on our platform.</p>
-        <a href="<?php echo home_url('/register'); ?>" class="font-black text-2xl shadow-xl btn-elite-launch btn-register-footer">Deploy Command Center for Free</a>
+        <a href="<?php echo home_url('/register'); ?>" class="font-black text-2xl shadow-xl btn-elite-launch btn-register-footer">Deploy Your Foundational Command Center</a>
         <p class="mt-20 text-sm opacity-70">No credit card required. Cancel anytime.</p>
     </div>
 </section>

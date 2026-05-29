@@ -9,7 +9,7 @@
 
 ## 2. Example Links (Sarah's Profile)
 - **Link 1 (Priority):**
-  - **Title:** "👉 Book a Free Discovery Call"
+  - **Title:** "👉 Book a Foundational Discovery Call"
   - **URL:** `https://calendly.com/sarah/discovery`
   - **Priority:** 0
 - **Link 2:**

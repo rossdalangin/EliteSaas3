@@ -549,7 +549,7 @@ class Saas_Dashboard {
                                     <input type="text" name="headline" value="<?php echo esc_attr( $meta['headline'] ); ?>" class="flex-1" placeholder="e.g. Scaling Founders from 6 to 7 Figures">
                                     <button type="button" class="ai-assist-btn button" data-target="headline" title="AI Generate Headline">✨ AI Assist</button>
                                 </div>
-                                <p class="field-hint"><strong>Pro Tip:</strong> Focus on the <em>transformation</em> you provide. Use AI Assist to generate ideas based on your niche.</p>
+                                <p class="field-hint"><strong>Elite Tip:</strong> Focus on the <em>transformation</em> you provide. Use AI Assist to generate ideas based on your niche.</p>
                             </div>
                             <div class="field">
                                 <label>Short Biography</label>
@@ -575,7 +575,7 @@ class Saas_Dashboard {
                                         'servant' => 'Public Servant / Official',
                                         'coach' => 'Business Coach',
                                         'creator' => 'Digital Creator',
-                                        'realtor' => 'Real Estate Pro',
+                                        'realtor' => 'Real Estate Expert',
                                         'business' => 'Corporate Entity',
                                         'speaker' => 'Public Speaker',
                                         'author' => 'Author / Writer',
@@ -583,7 +583,7 @@ class Saas_Dashboard {
                                         'lawyer' => 'Lawyer / Legal',
                                         'doctor' => 'Doctor / Healthcare',
                                         'artist' => 'Artist / Designer',
-                                        'agency' => 'Agency Owner',
+                                        'agency' => 'Empire Architect',
                                         'freelancer' => 'Creative Freelancer',
                                         'tiktok' => 'Influencer / TikTok',
                                         'luxury' => 'Luxury Advisory'
@@ -624,12 +624,12 @@ class Saas_Dashboard {
                                     <label><input type="checkbox" name="show_in_directory" value="1" <?php checked(get_post_meta($profile_id, '_saas_show_in_directory', true), 1); ?>> Show in Directory</label>
                                 </div>
                                 <div class="field <?php echo $is_pro ? '' : 'pro-gated-inline'; ?>">
-                                    <label><input type="checkbox" name="verified_badge" value="1" <?php checked(get_post_meta($profile_id, '_saas_verified_badge', true), 1); ?>> Verified Badge (Pro)</label>
+                                    <label><input type="checkbox" name="verified_badge" value="1" <?php checked(get_post_meta($profile_id, '_saas_verified_badge', true), 1); ?>> Verified Badge  (Elite Command)</label>
                                 </div>
                             </div>
 
                             <div class="field <?php echo $is_pro ? '' : 'pro-gated-inline'; ?>">
-                                <label>Profile Password Protection (Pro)</label>
+                                <label>Profile Password Protection  (Elite Command)</label>
                                 <input type="text" name="profile_password" value="<?php echo esc_attr(get_post_meta($profile_id, '_saas_profile_password', true)); ?>" placeholder="Leave blank for public access">
                             </div>
 
@@ -687,7 +687,7 @@ class Saas_Dashboard {
                             </div>
 
                             <div class="field <?php echo $is_pro ? '' : 'pro-gated-inline'; ?>">
-                                <label><input type="checkbox" name="hide_branding" value="1" <?php checked(get_post_meta($profile_id, '_saas_hide_branding', true), 1); ?>> Hide "Powered by" Branding (Pro)</label>
+                                <label><input type="checkbox" name="hide_branding" value="1" <?php checked(get_post_meta($profile_id, '_saas_hide_branding', true), 1); ?>> Hide "Powered by" Branding  (Elite Command)</label>
                             </div>
 
                             <div class="field">
@@ -700,8 +700,8 @@ class Saas_Dashboard {
                                 <select name="bg_type" id="profile-bg-type">
                                     <option value="flat" <?php selected(get_post_meta($profile_id, '_saas_bg_type', true), 'flat'); ?>>Clean Flat</option>
                                     <option value="gradient" <?php selected(get_post_meta($profile_id, '_saas_bg_type', true), 'gradient'); ?>>Modern Gradient</option>
-                                    <option value="mesh" <?php selected(get_post_meta($profile_id, '_saas_bg_type', true), 'mesh'); ?>>Elite Mesh (Pro)</option>
-                                    <option value="particles" <?php selected(get_post_meta($profile_id, '_saas_bg_type', true), 'particles'); ?>>Interactive Particles (Pro)</option>
+                                    <option value="mesh" <?php selected(get_post_meta($profile_id, '_saas_bg_type', true), 'mesh'); ?>>Elite Mesh  (Elite Command)</option>
+                                    <option value="particles" <?php selected(get_post_meta($profile_id, '_saas_bg_type', true), 'particles'); ?>>Interactive Particles  (Elite Command)</option>
                                 </select>
                             </div>
 
@@ -1011,7 +1011,7 @@ class Saas_Dashboard {
                                 <textarea name="meta_desc" rows="3" placeholder="A short summary of your profile for search engines."><?php echo esc_textarea(get_post_meta($profile_id, '_saas_seo_desc', true)); ?></textarea>
                             </div>
                             <div class="field <?php echo $is_pro ? '' : 'pro-gated-inline'; ?>">
-                                <label>Custom Favicon URL (Pro)</label>
+                                <label>Custom Favicon URL  (Elite Command)</label>
                                 <input type="url" name="favicon" value="<?php echo esc_url(get_post_meta($profile_id, '_saas_favicon', true)); ?>" placeholder="https://yoursite.com/favicon.ico">
                             </div>
 
@@ -1070,7 +1070,7 @@ class Saas_Dashboard {
                             <hr>
                             <h4>Advanced Triggers</h4>
                             <div class="field <?php echo $payments->is_agency_user($user_id) ? '' : 'pro-gated-inline'; ?>" data-tier="agency">
-                                <label>Webhook URL (Zapier/Make) <span class="pro-badge bg-dark color-gold border-gold">Agency</span></label>
+                                <label>Webhook URL (Zapier/Make) <span class="pro-badge bg-dark color-gold border-gold">Empire</span></label>
                                 <input type="url" name="lead_webhook" value="<?php echo esc_url(get_post_meta($profile_id, '_saas_lead_webhook', true)); ?>" <?php echo $payments->is_agency_user($user_id) ? '' : 'readonly'; ?> placeholder="https://hooks.zapier.com/v1/event/...">
                                 <p class="field-hint">Automatically send new leads to Zapier, Make, or your own API. Test with a sample payload using the "Test Webhook" button.</p>
                             </div>
@@ -1125,7 +1125,7 @@ class Saas_Dashboard {
                             </div>
                             <button type="submit" class="btn-primary">Save API Settings</button>
                         </form>
-                        <p class="text-sm color-muted mt-20">Connect your favorite CRM to sync leads automatically. Webhooks are also available in Settings. (Pro Feature)</p>
+                        <p class="text-sm color-muted mt-20">Connect your favorite CRM to sync leads automatically. Webhooks are also available in Settings.  (Elite Feature)</p>
                     </div>
                 </div>
 
@@ -1281,7 +1281,7 @@ class Saas_Dashboard {
                         $affiliate_kit = get_option('saas_affiliate_marketing_kit') ?: [];
                         if($affiliate_kit) : ?>
                             <div class="mt-30 pt-20 border-light-top">
-                                <h4>Pro Marketing Strategy Kit</h4>
+                                <h4>Elite Marketing Strategy Kit</h4>
                                 <div class="grid-stack gap-15">
                                     <?php foreach($affiliate_kit as $kit) : ?>
                                         <div class="p-20 bg-white radius-12 border-light">
@@ -1336,7 +1336,7 @@ class Saas_Dashboard {
                                 <p class="mt-10-0-0 color-dark lh-1-6">As a consultant, your time is your most valuable asset. Stop wasting it managing fragmented links. Upgrade to <strong>Elite Command</strong> to unlock advanced lead capture, whitelabeling, and smart routing.</p>
                             </div>
                             <div class="flex-shrink-0">
-                                <button class="btn-primary" onclick="window.scrollTo({top: document.getElementById('plans-anchor').offsetTop, behavior: 'smooth'})">See Pro Benefits ↓</button>
+                                <button class="btn-primary" onclick="window.scrollTo({top: document.getElementById('plans-anchor').offsetTop, behavior: 'smooth'})">See Elite Benefits ↓</button>
                             </div>
                         </div>
 
@@ -1652,7 +1652,7 @@ class Saas_Dashboard {
                         <option value="servant">🏛️ Public Servant / Official</option>
                         <option value="coach">🚀 Business Coach</option>
                         <option value="creator">🎬 Digital Creator</option>
-                        <option value="realtor">🏡 Real Estate Pro</option>
+                        <option value="realtor">🏡 Real Estate Expert</option>
                         <option value="business">🏢 Corporate Entity</option>
                         <option value="speaker">🎙️ Public Speaker</option>
                         <option value="author">✍️ Author / Writer</option>
@@ -1660,7 +1660,7 @@ class Saas_Dashboard {
                         <option value="lawyer">⚖️ Lawyer / Legal</option>
                         <option value="doctor">🩺 Doctor / Healthcare</option>
                         <option value="artist">🎨 Artist / Designer</option>
-                        <option value="agency">🏢 Agency Owner</option>
+                        <option value="agency">🏢 Empire Architect</option>
                         <option value="freelancer">🎨 Creative Freelancer</option>
                         <option value="tiktok">📱 Influencer / TikTok</option>
                         <option value="luxury">⚜️ Luxury Advisory</option>
@@ -1679,7 +1679,7 @@ class Saas_Dashboard {
                 <div class="wizard-step" data-step="3">
                     <h3>Strategic Alignment Complete!</h3>
                     <p>We are ready to generate your high-conversion assets. Your dashboard will be pre-configured with industry-standard blocks for your niche.</p>
-                    <button id="wizard-finish" class="btn-primary full-width">Generate My Elite Profile</button>
+                    <button id="wizard-finish" class="btn-primary full-width">Generate My Elite Commandfile</button>
                 </div>
                 <div class="wizard-progress"><div class="progress-bar-fill"></div></div>
             </div>
@@ -1770,7 +1770,7 @@ class Saas_Dashboard {
                 </div>
 
                 <div class="mt-40 p-20 bg-primary-soft radius-15 border-primary">
-                    <p class="m-0 text-xs font-bold color-primary">💡 Pro Tip: Need a naked domain (yourdomain.com)?</p>
+                    <p class="m-0 text-xs font-bold color-primary">💡 Elite Tip: Need a naked domain (yourdomain.com)?</p>
                     <p class="m-5-0-0 text-sm color-dark">Add an <strong>A Record</strong> pointing to our server IP: <code>(Contact Support for IP)</code> and set up a redirect from WWW to non-WWW.</p>
                 </div>
 

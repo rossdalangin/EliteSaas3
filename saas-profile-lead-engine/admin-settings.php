@@ -58,11 +58,11 @@ class Saas_Admin_Settings {
         $pricing = [
             [
                 'name' => 'Foundational', 'price' => '$0', 'period' => 'forever', 'cta' => 'Join the Elite Foundational', 'link' => '/register', 'style' => 'light',
-                'features' => ['1 Authority Engine', 'Standard Blocks', 'Basic Tracking', 'Community Access']
+                'features' => ['1 Authority Engine', 'Foundational Blocks', 'Basic Tracking', 'Community Access']
             ],
             [
                 'name' => 'Elite Command', 'price' => '$19', 'period' => '/mo', 'cta' => 'Yes! Upgrade My Engine', 'link' => '/register?plan=pro', 'style' => 'featured', 'badge' => 'FOR THE ELITE 1%',
-                'features' => ['Everything in Foundational', 'Unlimited Premium Blocks', 'Lead Generation CRM', 'Custom Domain Mapping', 'Whitelabel (No Branding)', 'Priority VIP Support']
+                'features' => ['Everything in Foundational', 'Unlimited Elite Blocks', 'Lead Generation CRM', 'Custom Domain Mapping', 'Whitelabel (No Branding)', 'Priority VIP Support']
             ],
             [
                 'name' => 'Empire Scale', 'price' => '$49', 'period' => '/mo', 'cta' => 'Scale My Empire', 'link' => '/register?plan=agency', 'style' => 'light',
@@ -1796,7 +1796,7 @@ class Saas_Admin_Settings {
                 <div id="tab-home-editor" class="tab-content" style="display:none; padding:20px; background:#fff; border:1px solid #ddd;">
                     <h3>Elite Sales Copy Setup</h3>
                     <p>Populate your homepage with professional copy designed by elite marketers.</p>
-                    <a href="<?php echo admin_url('admin-post.php?action=saas_populate_pro_content'); ?>" class="button button-primary" style="background:#10b981; border-color:#10b981; color:#fff;">🔥 Apply Pro Sales Copy Now</a>
+                    <a href="<?php echo admin_url('admin-post.php?action=saas_populate_pro_content'); ?>" class="button button-primary" style="background:#10b981; border-color:#10b981; color:#fff;">🔥 Apply Elite Sales Copy Now</a>
                     <hr>
                     <p>Use the General Settings tab to manually edit homepage titles, descriptions, and JSON content.</p>
                 </div>

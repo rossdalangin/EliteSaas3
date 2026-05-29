@@ -24,7 +24,7 @@ Register for your account today and secure your unique name before someone else 
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
 5. **Trust is the only currency that matters in high-ticket sales today.**
-Move your followers into your own digital ecosystem where you own the data and the customer relationship. It's the best insurance policy against platform algorithm changes that can kill your business. Claim your custom domain today with our Elite Pro plan.
+Move your followers into your own digital ecosystem where you own the data and the customer relationship. It's the best insurance policy against platform algorithm changes that can kill your business. Claim your custom domain today with our Elite Command plan.
 Check out our high-end themes at the link below and show up as the expert you truly are.
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
@@ -45,7 +45,7 @@ Get your NFC-ready digital card setup today and dominate your next networking ev
 
 9. **The difference between a freelancer and a firm is in their systems.**
 Verified badges and premium themes build trust before you even speak your first word to a prospect. Give your visitors a reason to believe in your expertise from the first second they arrive. Download our Authority Engine plugin and boost your credibility today.
-Register for the Elite Pro plan and take full control of your brand with a custom domain.
+Register for the Elite Command plan and take full control of your brand with a custom domain.
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
 10. **Branding is the shadow of leadership, so look like a leader.**
@@ -74,7 +74,7 @@ Register for your account today and secure your unique name before someone else 
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
 15. **Why pretty websites don't always pay the bills for coaches.**
-Move your followers into your own digital ecosystem where you own the data and the customer relationship. It's the best insurance policy against platform algorithm changes that can kill your business. Claim your custom domain today with our Elite Pro plan.
+Move your followers into your own digital ecosystem where you own the data and the customer relationship. It's the best insurance policy against platform algorithm changes that can kill your business. Claim your custom domain today with our Elite Command plan.
 Check out our high-end themes at the link below and show up as the expert you truly are.
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
@@ -95,7 +95,7 @@ Get your NFC-ready digital card setup today and dominate your next networking ev
 
 19. **Ownership is the only true security in an ever-changing digital world.**
 Verified badges and premium themes build trust before you even speak your first word to a prospect. Give your visitors a reason to believe in your expertise from the first second they arrive. Download our Authority Engine plugin and boost your credibility today.
-Register for the Elite Pro plan and take full control of your brand with a custom domain.
+Register for the Elite Command plan and take full control of your brand with a custom domain.
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
 20. **Scaling a consulting business isn't about working more hours today.**
@@ -124,7 +124,7 @@ Register for your account today and secure your unique name before someone else 
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
 25. **Trust is the only currency that matters in high-ticket sales today.**
-Move your followers into your own digital ecosystem where you own the data and the customer relationship. It's the best insurance policy against platform algorithm changes that can kill your business. Claim your custom domain today with our Elite Pro plan.
+Move your followers into your own digital ecosystem where you own the data and the customer relationship. It's the best insurance policy against platform algorithm changes that can kill your business. Claim your custom domain today with our Elite Command plan.
 Check out our high-end themes at the link below and show up as the expert you truly are.
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
@@ -145,7 +145,7 @@ Get your NFC-ready digital card setup today and dominate your next networking ev
 
 29. **The difference between a freelancer and a firm is in their systems.**
 Verified badges and premium themes build trust before you even speak your first word to a prospect. Give your visitors a reason to believe in your expertise from the first second they arrive. Download our Authority Engine plugin and boost your credibility today.
-Register for the Elite Pro plan and take full control of your brand with a custom domain.
+Register for the Elite Command plan and take full control of your brand with a custom domain.
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
 30. **Branding is the shadow of leadership, so look like a leader.**
@@ -174,7 +174,7 @@ Register for your account today and secure your unique name before someone else 
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
 35. **Why pretty websites don't always pay the bills for coaches.**
-Move your followers into your own digital ecosystem where you own the data and the customer relationship. It's the best insurance policy against platform algorithm changes that can kill your business. Claim your custom domain today with our Elite Pro plan.
+Move your followers into your own digital ecosystem where you own the data and the customer relationship. It's the best insurance policy against platform algorithm changes that can kill your business. Claim your custom domain today with our Elite Command plan.
 Check out our high-end themes at the link below and show up as the expert you truly are.
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
@@ -195,7 +195,7 @@ Get your NFC-ready digital card setup today and dominate your next networking ev
 
 39. **Ownership is the only true security in an ever-changing digital world.**
 Verified badges and premium themes build trust before you even speak your first word to a prospect. Give your visitors a reason to believe in your expertise from the first second they arrive. Download our Authority Engine plugin and boost your credibility today.
-Register for the Elite Pro plan and take full control of your brand with a custom domain.
+Register for the Elite Command plan and take full control of your brand with a custom domain.
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
 40. **Scaling a consulting business isn't about working more hours today.**
@@ -224,7 +224,7 @@ Register for your account today and secure your unique name before someone else 
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
 45. **Trust is the only currency that matters in high-ticket sales today.**
-Move your followers into your own digital ecosystem where you own the data and the customer relationship. It's the best insurance policy against platform algorithm changes that can kill your business. Claim your custom domain today with our Elite Pro plan.
+Move your followers into your own digital ecosystem where you own the data and the customer relationship. It's the best insurance policy against platform algorithm changes that can kill your business. Claim your custom domain today with our Elite Command plan.
 Check out our high-end themes at the link below and show up as the expert you truly are.
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
@@ -245,7 +245,7 @@ Get your NFC-ready digital card setup today and dominate your next networking ev
 
 49. **The difference between a freelancer and a firm is in their systems.**
 Verified badges and premium themes build trust before you even speak your first word to a prospect. Give your visitors a reason to believe in your expertise from the first second they arrive. Download our Authority Engine plugin and boost your credibility today.
-Register for the Elite Pro plan and take full control of your brand with a custom domain.
+Register for the Elite Command plan and take full control of your brand with a custom domain.
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
 50. **Branding is the shadow of leadership, so look like a leader.**
@@ -274,7 +274,7 @@ Register for your account today and secure your unique name before someone else 
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
 55. **Why pretty websites don't always pay the bills for coaches.**
-Move your followers into your own digital ecosystem where you own the data and the customer relationship. It's the best insurance policy against platform algorithm changes that can kill your business. Claim your custom domain today with our Elite Pro plan.
+Move your followers into your own digital ecosystem where you own the data and the customer relationship. It's the best insurance policy against platform algorithm changes that can kill your business. Claim your custom domain today with our Elite Command plan.
 Check out our high-end themes at the link below and show up as the expert you truly are.
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
@@ -295,7 +295,7 @@ Get your NFC-ready digital card setup today and dominate your next networking ev
 
 59. **Ownership is the only true security in an ever-changing digital world.**
 Verified badges and premium themes build trust before you even speak your first word to a prospect. Give your visitors a reason to believe in your expertise from the first second they arrive. Download our Authority Engine plugin and boost your credibility today.
-Register for the Elite Pro plan and take full control of your brand with a custom domain.
+Register for the Elite Command plan and take full control of your brand with a custom domain.
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
 60. **Scaling a consulting business isn't about working more hours today.**
@@ -324,7 +324,7 @@ Register for your account today and secure your unique name before someone else 
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
 65. **Trust is the only currency that matters in high-ticket sales today.**
-Move your followers into your own digital ecosystem where you own the data and the customer relationship. It's the best insurance policy against platform algorithm changes that can kill your business. Claim your custom domain today with our Elite Pro plan.
+Move your followers into your own digital ecosystem where you own the data and the customer relationship. It's the best insurance policy against platform algorithm changes that can kill your business. Claim your custom domain today with our Elite Command plan.
 Check out our high-end themes at the link below and show up as the expert you truly are.
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
@@ -345,7 +345,7 @@ Get your NFC-ready digital card setup today and dominate your next networking ev
 
 69. **The difference between a freelancer and a firm is in their systems.**
 Verified badges and premium themes build trust before you even speak your first word to a prospect. Give your visitors a reason to believe in your expertise from the first second they arrive. Download our Authority Engine plugin and boost your credibility today.
-Register for the Elite Pro plan and take full control of your brand with a custom domain.
+Register for the Elite Command plan and take full control of your brand with a custom domain.
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
 70. **Branding is the shadow of leadership, so look like a leader.**
@@ -374,7 +374,7 @@ Register for your account today and secure your unique name before someone else 
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
 75. **Why pretty websites don't always pay the bills for coaches.**
-Move your followers into your own digital ecosystem where you own the data and the customer relationship. It's the best insurance policy against platform algorithm changes that can kill your business. Claim your custom domain today with our Elite Pro plan.
+Move your followers into your own digital ecosystem where you own the data and the customer relationship. It's the best insurance policy against platform algorithm changes that can kill your business. Claim your custom domain today with our Elite Command plan.
 Check out our high-end themes at the link below and show up as the expert you truly are.
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
@@ -395,7 +395,7 @@ Get your NFC-ready digital card setup today and dominate your next networking ev
 
 79. **Ownership is the only true security in an ever-changing digital world.**
 Verified badges and premium themes build trust before you even speak your first word to a prospect. Give your visitors a reason to believe in your expertise from the first second they arrive. Download our Authority Engine plugin and boost your credibility today.
-Register for the Elite Pro plan and take full control of your brand with a custom domain.
+Register for the Elite Command plan and take full control of your brand with a custom domain.
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
 80. **Scaling a consulting business isn't about working more hours today.**
@@ -424,7 +424,7 @@ Register for your account today and secure your unique name before someone else 
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
 85. **Trust is the only currency that matters in high-ticket sales today.**
-Move your followers into your own digital ecosystem where you own the data and the customer relationship. It's the best insurance policy against platform algorithm changes that can kill your business. Claim your custom domain today with our Elite Pro plan.
+Move your followers into your own digital ecosystem where you own the data and the customer relationship. It's the best insurance policy against platform algorithm changes that can kill your business. Claim your custom domain today with our Elite Command plan.
 Check out our high-end themes at the link below and show up as the expert you truly are.
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
@@ -445,7 +445,7 @@ Get your NFC-ready digital card setup today and dominate your next networking ev
 
 89. **The difference between a freelancer and a firm is in their systems.**
 Verified badges and premium themes build trust before you even speak your first word to a prospect. Give your visitors a reason to believe in your expertise from the first second they arrive. Download our Authority Engine plugin and boost your credibility today.
-Register for the Elite Pro plan and take full control of your brand with a custom domain.
+Register for the Elite Command plan and take full control of your brand with a custom domain.
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
 90. **Branding is the shadow of leadership, so look like a leader.**
@@ -474,7 +474,7 @@ Register for your account today and secure your unique name before someone else 
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
 95. **Why pretty websites don't always pay the bills for coaches.**
-Move your followers into your own digital ecosystem where you own the data and the customer relationship. It's the best insurance policy against platform algorithm changes that can kill your business. Claim your custom domain today with our Elite Pro plan.
+Move your followers into your own digital ecosystem where you own the data and the customer relationship. It's the best insurance policy against platform algorithm changes that can kill your business. Claim your custom domain today with our Elite Command plan.
 Check out our high-end themes at the link below and show up as the expert you truly are.
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
@@ -495,7 +495,7 @@ Get your NFC-ready digital card setup today and dominate your next networking ev
 
 99. **Ownership is the only true security in an ever-changing digital world.**
 Verified badges and premium themes build trust before you even speak your first word to a prospect. Give your visitors a reason to believe in your expertise from the first second they arrive. Download our Authority Engine plugin and boost your credibility today.
-Register for the Elite Pro plan and take full control of your brand with a custom domain.
+Register for the Elite Command plan and take full control of your brand with a custom domain.
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
 100. **Scaling a consulting business isn't about working more hours today.**
@@ -532,7 +532,7 @@ Check out our high-end themes at the link below and show up as the expert you tr
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
 6. **I just deleted my Linktree and something crazy happened to my leads.**
-I’m moving my audience into my own database this month to protect my future. Ownership is the only way to have long-term security in the coaching business world. Claim your unique URL and custom domain with an Elite Pro account.
+I’m moving my audience into my own database this month to protect my future. Ownership is the only way to have long-term security in the coaching business world. Claim your unique URL and custom domain with an Elite Command account.
 Don't wait another day to plug the leaks in your funnel; join the Elite community now!
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
@@ -548,7 +548,7 @@ Get your NFC-ready digital card setup today and dominate your next networking ev
 
 9. **Stop sending people to your website and hoping they find a form.**
 I automated the first step of my follow-up with a simple, professional auto-responder. Now every lead gets a warm welcome instantly without me lifting a single finger. Register for the Elite SaaS and systematize your client intake.
-Register for the Elite Pro plan and take full control of your brand with a custom domain.
+Register for the Elite Command plan and take full control of your brand with a custom domain.
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
 10. **Your bio link is your digital handshake, so make sure it is firm.**
@@ -582,7 +582,7 @@ Check out our high-end themes at the link below and show up as the expert you tr
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
 16. **Are you building your empire on rented land or your own digital estate?**
-I’m moving my audience into my own database this month to protect my future. Ownership is the only way to have long-term security in the coaching business world. Claim your unique URL and custom domain with an Elite Pro account.
+I’m moving my audience into my own database this month to protect my future. Ownership is the only way to have long-term security in the coaching business world. Claim your unique URL and custom domain with an Elite Command account.
 Don't wait another day to plug the leaks in your funnel; join the Elite community now!
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
@@ -598,7 +598,7 @@ Get your NFC-ready digital card setup today and dominate your next networking ev
 
 19. **My mobile landing page finally passes the 'thumb test' for my leads.**
 I automated the first step of my follow-up with a simple, professional auto-responder. Now every lead gets a warm welcome instantly without me lifting a single finger. Register for the Elite SaaS and systematize your client intake.
-Register for the Elite Pro plan and take full control of your brand with a custom domain.
+Register for the Elite Command plan and take full control of your brand with a custom domain.
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
 20. **Trust is the currency we all need more of in this crowded market.**
@@ -632,7 +632,7 @@ Check out our high-end themes at the link below and show up as the expert you tr
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
 26. **I just deleted my Linktree and something crazy happened to my leads.**
-I’m moving my audience into my own database this month to protect my future. Ownership is the only way to have long-term security in the coaching business world. Claim your unique URL and custom domain with an Elite Pro account.
+I’m moving my audience into my own database this month to protect my future. Ownership is the only way to have long-term security in the coaching business world. Claim your unique URL and custom domain with an Elite Command account.
 Don't wait another day to plug the leaks in your funnel; join the Elite community now!
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
@@ -648,7 +648,7 @@ Get your NFC-ready digital card setup today and dominate your next networking ev
 
 29. **Stop sending people to your website and hoping they find a form.**
 I automated the first step of my follow-up with a simple, professional auto-responder. Now every lead gets a warm welcome instantly without me lifting a single finger. Register for the Elite SaaS and systematize your client intake.
-Register for the Elite Pro plan and take full control of your brand with a custom domain.
+Register for the Elite Command plan and take full control of your brand with a custom domain.
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
 30. **Your bio link is your digital handshake, so make sure it is firm.**
@@ -682,7 +682,7 @@ Check out our high-end themes at the link below and show up as the expert you tr
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
 36. **Are you building your empire on rented land or your own digital estate?**
-I’m moving my audience into my own database this month to protect my future. Ownership is the only way to have long-term security in the coaching business world. Claim your unique URL and custom domain with an Elite Pro account.
+I’m moving my audience into my own database this month to protect my future. Ownership is the only way to have long-term security in the coaching business world. Claim your unique URL and custom domain with an Elite Command account.
 Don't wait another day to plug the leaks in your funnel; join the Elite community now!
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
@@ -698,7 +698,7 @@ Get your NFC-ready digital card setup today and dominate your next networking ev
 
 39. **My mobile landing page finally passes the 'thumb test' for my leads.**
 I automated the first step of my follow-up with a simple, professional auto-responder. Now every lead gets a warm welcome instantly without me lifting a single finger. Register for the Elite SaaS and systematize your client intake.
-Register for the Elite Pro plan and take full control of your brand with a custom domain.
+Register for the Elite Command plan and take full control of your brand with a custom domain.
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
 40. **Trust is the currency we all need more of in this crowded market.**
@@ -732,7 +732,7 @@ Check out our high-end themes at the link below and show up as the expert you tr
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
 46. **I just deleted my Linktree and something crazy happened to my leads.**
-I’m moving my audience into my own database this month to protect my future. Ownership is the only way to have long-term security in the coaching business world. Claim your unique URL and custom domain with an Elite Pro account.
+I’m moving my audience into my own database this month to protect my future. Ownership is the only way to have long-term security in the coaching business world. Claim your unique URL and custom domain with an Elite Command account.
 Don't wait another day to plug the leaks in your funnel; join the Elite community now!
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
@@ -748,7 +748,7 @@ Get your NFC-ready digital card setup today and dominate your next networking ev
 
 49. **Stop sending people to your website and hoping they find a form.**
 I automated the first step of my follow-up with a simple, professional auto-responder. Now every lead gets a warm welcome instantly without me lifting a single finger. Register for the Elite SaaS and systematize your client intake.
-Register for the Elite Pro plan and take full control of your brand with a custom domain.
+Register for the Elite Command plan and take full control of your brand with a custom domain.
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
 50. **Your bio link is your digital handshake, so make sure it is firm.**
@@ -782,7 +782,7 @@ Check out our high-end themes at the link below and show up as the expert you tr
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
 56. **Are you building your empire on rented land or your own digital estate?**
-I’m moving my audience into my own database this month to protect my future. Ownership is the only way to have long-term security in the coaching business world. Claim your unique URL and custom domain with an Elite Pro account.
+I’m moving my audience into my own database this month to protect my future. Ownership is the only way to have long-term security in the coaching business world. Claim your unique URL and custom domain with an Elite Command account.
 Don't wait another day to plug the leaks in your funnel; join the Elite community now!
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
@@ -798,7 +798,7 @@ Get your NFC-ready digital card setup today and dominate your next networking ev
 
 59. **My mobile landing page finally passes the 'thumb test' for my leads.**
 I automated the first step of my follow-up with a simple, professional auto-responder. Now every lead gets a warm welcome instantly without me lifting a single finger. Register for the Elite SaaS and systematize your client intake.
-Register for the Elite Pro plan and take full control of your brand with a custom domain.
+Register for the Elite Command plan and take full control of your brand with a custom domain.
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
 60. **Trust is the currency we all need more of in this crowded market.**
@@ -832,7 +832,7 @@ Check out our high-end themes at the link below and show up as the expert you tr
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
 66. **I just deleted my Linktree and something crazy happened to my leads.**
-I’m moving my audience into my own database this month to protect my future. Ownership is the only way to have long-term security in the coaching business world. Claim your unique URL and custom domain with an Elite Pro account.
+I’m moving my audience into my own database this month to protect my future. Ownership is the only way to have long-term security in the coaching business world. Claim your unique URL and custom domain with an Elite Command account.
 Don't wait another day to plug the leaks in your funnel; join the Elite community now!
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
@@ -848,7 +848,7 @@ Get your NFC-ready digital card setup today and dominate your next networking ev
 
 69. **Stop sending people to your website and hoping they find a form.**
 I automated the first step of my follow-up with a simple, professional auto-responder. Now every lead gets a warm welcome instantly without me lifting a single finger. Register for the Elite SaaS and systematize your client intake.
-Register for the Elite Pro plan and take full control of your brand with a custom domain.
+Register for the Elite Command plan and take full control of your brand with a custom domain.
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
 70. **Your bio link is your digital handshake, so make sure it is firm.**
@@ -882,7 +882,7 @@ Check out our high-end themes at the link below and show up as the expert you tr
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
 76. **Are you building your empire on rented land or your own digital estate?**
-I’m moving my audience into my own database this month to protect my future. Ownership is the only way to have long-term security in the coaching business world. Claim your unique URL and custom domain with an Elite Pro account.
+I’m moving my audience into my own database this month to protect my future. Ownership is the only way to have long-term security in the coaching business world. Claim your unique URL and custom domain with an Elite Command account.
 Don't wait another day to plug the leaks in your funnel; join the Elite community now!
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
@@ -898,7 +898,7 @@ Get your NFC-ready digital card setup today and dominate your next networking ev
 
 79. **My mobile landing page finally passes the 'thumb test' for my leads.**
 I automated the first step of my follow-up with a simple, professional auto-responder. Now every lead gets a warm welcome instantly without me lifting a single finger. Register for the Elite SaaS and systematize your client intake.
-Register for the Elite Pro plan and take full control of your brand with a custom domain.
+Register for the Elite Command plan and take full control of your brand with a custom domain.
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
 80. **Trust is the currency we all need more of in this crowded market.**
@@ -932,7 +932,7 @@ Check out our high-end themes at the link below and show up as the expert you tr
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
 86. **I just deleted my Linktree and something crazy happened to my leads.**
-I’m moving my audience into my own database this month to protect my future. Ownership is the only way to have long-term security in the coaching business world. Claim your unique URL and custom domain with an Elite Pro account.
+I’m moving my audience into my own database this month to protect my future. Ownership is the only way to have long-term security in the coaching business world. Claim your unique URL and custom domain with an Elite Command account.
 Don't wait another day to plug the leaks in your funnel; join the Elite community now!
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
@@ -948,7 +948,7 @@ Get your NFC-ready digital card setup today and dominate your next networking ev
 
 89. **Stop sending people to your website and hoping they find a form.**
 I automated the first step of my follow-up with a simple, professional auto-responder. Now every lead gets a warm welcome instantly without me lifting a single finger. Register for the Elite SaaS and systematize your client intake.
-Register for the Elite Pro plan and take full control of your brand with a custom domain.
+Register for the Elite Command plan and take full control of your brand with a custom domain.
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
 90. **Your bio link is your digital handshake, so make sure it is firm.**
@@ -982,7 +982,7 @@ Check out our high-end themes at the link below and show up as the expert you tr
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
 96. **Are you building your empire on rented land or your own digital estate?**
-I’m moving my audience into my own database this month to protect my future. Ownership is the only way to have long-term security in the coaching business world. Claim your unique URL and custom domain with an Elite Pro account.
+I’m moving my audience into my own database this month to protect my future. Ownership is the only way to have long-term security in the coaching business world. Claim your unique URL and custom domain with an Elite Command account.
 Don't wait another day to plug the leaks in your funnel; join the Elite community now!
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
@@ -998,7 +998,7 @@ Get your NFC-ready digital card setup today and dominate your next networking ev
 
 99. **My mobile landing page finally passes the 'thumb test' for my leads.**
 I automated the first step of my follow-up with a simple, professional auto-responder. Now every lead gets a warm welcome instantly without me lifting a single finger. Register for the Elite SaaS and systematize your client intake.
-Register for the Elite Pro plan and take full control of your brand with a custom domain.
+Register for the Elite Command plan and take full control of your brand with a custom domain.
 #coach #consultant #leadgen #highticket #marketing #authority #webdesign #elitesaas #closeclient #success
 
 100. **Trust is the currency we all need more of in this crowded market.**

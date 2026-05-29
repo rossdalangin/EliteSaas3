@@ -9,7 +9,7 @@
   - *Action:* Show yourself clicking your physical NFC card. "One tap and they have my info. No more paper cards ending up in the trash."
 - **Day 4 (LinkedIn):** "The Undeniable Math of Conversion."
   - *Post:* "$19/mo vs $10,000 lost in traffic. If your lead value is $100, you only need to capture 1 extra lead every 5 years for this to pay for itself. But we capture 3x more every week."
-- **Day 5 (FB Group):** "Free Resource: 5 Headlines that double your bio clicks."
+- **Day 5 (FB Group):** "Foundational Resource: 5 Headlines that double your bio clicks."
   - *Post:* "I just ran a split test on my bio link. Version B got 32% more leads. Here are the 5 headlines you can steal right now."
 - **Day 6 (Email):** "Why I burned my business cards."
   - *Body:* "They were a relic of the past. Now, my identity is digital, instant, and high-converting."

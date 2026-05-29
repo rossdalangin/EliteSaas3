@@ -60,7 +60,7 @@ get_header(); ?>
             <h2 class="text-5xl font-black mb-60 tracking-tight">The Tactical Advantage</h2>
             <div class="grid-2 gap-30 text-left">
                 <div class="card-white hover-lift border-light">
-                    <strong class="text-primary text-xl display-block mb-10">01. Pro Visuals</strong>
+                    <strong class="text-primary text-xl display-block mb-10">01. Elite Visuals</strong>
                     <p class="color-light mb-0">High-end glassmorphism and modern typography that builds instant trust.</p>
                 </div>
                 <div class="card-white hover-lift border-light">

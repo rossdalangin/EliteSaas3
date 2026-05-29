@@ -66,7 +66,7 @@ if ( ! get_query_var( 'saas_profile' ) ) : ?>
 <?php endif; // End if !get_query_var('saas_profile') ?>
 
 <?php
-// Restore Pro feature for custom footer scripts
+// Restore Elite feature for custom footer scripts
 $slug = get_query_var( 'saas_profile' );
 if ($slug) {
     $profile = saas_get_profile_by_slug($slug);

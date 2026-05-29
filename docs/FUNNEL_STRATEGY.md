@@ -22,7 +22,7 @@ A "Funnel Profile" differs from a standard "Link List" by having a singular prim
 ---
 
 ## 2. Advanced Funnel Routing
-Use **Conditional Routing** (Pro Feature) to segment your traffic:
+Use **Conditional Routing** (Elite Feature) to segment your traffic:
 
 - **Mobile Users:** Route to an App Store or a mobile-optimized checkout.
 - **Geo-Targeting:** Route visitors from different countries to different currency pricing tables or translated landing pages.
@@ -30,6 +30,6 @@ Use **Conditional Routing** (Pro Feature) to segment your traffic:
 ---
 
 ## 3. Retargeting (The "Hidden" Funnel)
-Pro users can add **Meta Pixels** or **Google Analytics** tags.
+Elite Command users can add **Meta Pixels** or **Google Analytics** tags.
 - **Strategy:** Create a custom audience of people who visited your profile but didn't submit the Lead Form.
 - **Ad Copy:** *"I saw you checked out my profile but didn't grab the [Lead Magnet] yet. Here's a direct link to the guide."*

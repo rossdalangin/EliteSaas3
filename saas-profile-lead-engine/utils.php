@@ -614,7 +614,7 @@ function saas_get_default_templates() {
         ],
         'model' => [
             'headline' => 'High-Fashion & Commercial Talent. 👗',
-            'bio' => 'Represented by Elite Agency. Based in Milan/Paris/NYC. Let\'s create magic.',
+            'bio' => 'Represented by Elite Empire. Based in Milan/Paris/NYC. Let\'s create magic.',
             'color' => '#be185d', 'theme' => 'luxury', 'shadow' => 'soft',
             'bg_type' => 'flat', 'bg_color' => '#ffffff',
             'links' => [

@@ -18,7 +18,7 @@
 - **TikTok/Shorts:** "Case Study: How a coach doubled their leads with [SaaS Name]."
 - **LinkedIn:** "Special Launch Offer: Get a lifetime deal on [SaaS Name] this week only."
 - **TikTok/Shorts:** "Stop wasting money on physical cards. Go digital and never lose a lead."
-- **All Platforms:** Final call to join the Pro tier at an early-bird discount.
+- **All Platforms:** Final call to join the Elite tier at an early-bird discount.
 
 ## 2. Outreach System
 
@@ -28,7 +28,7 @@
 ### Follow-up Sequence (Email)
 - **Day 1:** "Welcome to [SaaS Name]! Here is your first profile setup link."
 - **Day 3:** "How's your profile? Here are 3 tips to increase link clicks."
-- **Day 7:** "You've received [X] views! Imagine if those were captured leads. Upgrade to Pro today."
+- **Day 7:** "You've received [X] views! Imagine if those were captured leads. Upgrade to Elite Command today."
 
 ## 3. Target Market Segments & Where to Find Them
 - **Realtors:** Zillow, Realtor.com, Local Real Estate Facebook Groups.
