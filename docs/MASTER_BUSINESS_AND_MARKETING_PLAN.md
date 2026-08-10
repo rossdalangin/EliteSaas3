@@ -253,7 +253,7 @@ When writing copy:
 
 ---
 
-## APPENDIX A: 30 TELEPROMPTER-READY VIRAL SCRIPTS
+## APPENDIX A: 40 TELEPROMPTER-READY VIRAL SCRIPTS
 *Supercharged for High-Performance Presentation. Optimized for High-Retention Algorithms.*
 
 ### Script 1: The Silent Thief in Your Bio
@@ -829,6 +829,198 @@ When writing copy:
 > Which path are you taking? [PAUSE]
 >
 > I’ll see you on the inside.
+>
+> Go to KnotBio.com."
+
+---
+
+### Script 31: The Imposter Syndrome of Free Tools
+*   **Visual Cues:** Pinch your forehead with look of slight embarrassment, looking down.
+*   **Problem Solved:** Professional insecurity and poor visual projection.
+*   **Why They Need It:** Gives them the visual confidence to command five-figure consulting fees.
+> "You are pitching ten-thousand-dollar corporate contracts... [PAUSE]
+>
+> But you're sending key stakeholders to a free link tree. [PAUSE]
+>
+> Subconsciously... you feel like an imposter.
+>
+> Because your digital home doesn't match your actual intellectual value.
+>
+> KnotBio is the antidote. It is a high-ticket showroom designed specifically for high-level experts.
+>
+> Elevate your digital identity. Look like the category king you are.
+>
+> Claim your elite domain at KnotBio.com."
+
+---
+
+### Script 32: The Passive Income Illusion
+*   **Visual Cues:** Open and close your hand to replicate a talking mouth.
+*   **Problem Solved:** Creators struggling to build actual recurring digital assets.
+*   **Why They Need It:** Leverages their social traffic to automatically pitch recurring SaaS memberships via passive affiliate footer links.
+> "Everyone talks about passive income... [PAUSE]
+>
+> But ninety-nine percent of creators are still trading time for dollars.
+>
+> Here is the fastest shortcut to real, predictable recurring revenue.
+>
+> Every free user you onboard to KnotBio has your affiliate link cooked into their profile footer.
+>
+> When they upgrade to Pro... you get thirty percent recurring commission for life.
+>
+> Your bio link isn't just an identity... it's a passive equity asset.
+>
+> Set up your affiliate pipeline today on KnotBio."
+
+---
+
+### Script 33: The Video Hook Trap
+*   **Visual Cues:** Point directly to the center of your forehead, then slowly pull your finger back.
+*   **Problem Solved:** Low watch-time or short session durations on professional links.
+*   **Why They Need It:** Retains immediate viral traffic by nesting short video loops directly on the hub.
+> "You spend five hours writing the perfect viral hook... [PAUSE]
+>
+> But when they click your bio... they get a dry, text-only list. [PAUSE]
+>
+> You've completely broken the attention loop.
+>
+> Keep them engaged. KnotBio lets you embed a native, high-definition personal greeting video directly on your hub.
+>
+> Warm them up, address objections, and build immediate trust before they ever read a single word of text.
+>
+> Capture the conversion. Go to KnotBio.com."
+
+---
+
+### Script 34: The Lead Capture Leak
+*   **Visual Cues:** Mimic water leaking through cupped, open hands.
+*   **Problem Solved:** Lost prospective client email addresses due to multi-page signups.
+*   **Why They Need It:** Secures subscriber information natively inside the social bio environment.
+> "Most landing pages are leaky buckets. [PAUSE]
+>
+> You make them click a link... wait for an external site to load... find the email box... type it in... and click submit.
+>
+> For every step in that process, you lose twenty percent of your prospects.
+>
+> KnotBio captures emails natively on your profile page with zero external redirects.
+>
+> Simple, clean, and instant.
+>
+> Plug the leak. Deploy your command center on KnotBio."
+
+---
+
+### Script 35: The Custom CSS Nightmare
+*   **Visual Cues:** Throw hands up and roll your eyes, mock-typing frantically.
+*   **Problem Solved:** Wasting hours on complex website coding or page builders.
+*   **Why They Need It:** Allows non-technical founders to launch a gorgeous, verified hub in under 60 seconds.
+> "I used to spend days debugging custom CSS on WordPress... [PAUSE]
+>
+> Just to get my social links looking semi-professional on mobile screens.
+>
+> It was a massive waste of precious CEO time.
+>
+> Now... I use KnotBio's pre-configured Vibe Presets.
+>
+> Indigo, Emerald, Slate... all certified with perfect mobile readability and high contrast overrides.
+>
+> Spend your time growing your empire, not styling buttons.
+>
+> Build smart. Build fast. Build on KnotBio.com."
+
+---
+
+### Script 36: The "Authority" Illusion
+*   **Visual Cues:** Hold up your index finger, speaking in an ultra-precise tone.
+*   **Problem Solved:** Lack of social proof and peer network authority.
+*   **Why They Need It:** Places their profile in a vetted, highly selective professional directory.
+> "How do people perceive your status in your industry? [PAUSE]
+>
+> If they search your name... do they find a fragmented, messy digital footprint?
+>
+> Or do they find you nested inside an elite network directory of top-tier leaders?
+>
+> KnotBio automatically list your profile in our exclusive, highly indexed Discovery Directory.
+>
+> Be seen alongside the absolute top consultants, coaches, and creators in the space.
+>
+> Surround yourself with greatness. Claim your spot on KnotBio."
+
+---
+
+### Script 37: The One-Click Migration
+*   **Visual Cues:** Snap your fingers with a satisfied smile.
+*   **Problem Solved:** Procrastination due to the friction of manual migration from old tools.
+*   **Why They Need It:** Removes 100% of setup friction so busy professionals can upgrade immediately.
+> "I know you want to switch... [PAUSE]
+>
+> But you are lazy. You don't want to copy over all your links from Linktree manually.
+>
+> That's why we engineered the **One-Click Migration**.
+>
+> Enter your old profile handle... and KnotBio’s import engine automatically fetches, formats, and rebuilds your links in under five seconds.
+>
+> Absolute, friction-free upgrade.
+>
+> No excuses left. Upgrade your brand today at KnotBio.com."
+
+---
+
+### Script 38: The NFC Tap-to-Lead Automation
+*   **Visual Cues:** Hold up a sleek plastic NFC card, smile, and tap it against your phone.
+*   **Problem Solved:** Inability to collect in-person prospect information easily.
+*   **Why They Need It:** Converts random networking encounters into high-intent CRM leads.
+> "When you meet someone in person... [PAUSE]
+>
+> Simply saving your number in their phone is a passive move.
+>
+> You have to wait for them to text you. [PAUSE]
+>
+> Switch the dynamic.
+>
+> Tap your KnotBio NFC card to their phone.
+>
+> They see your elite profile and can instantly submit their details to book a call with you on the spot.
+>
+> Be proactive. Command the relationship.
+>
+> Deploy your card on KnotBio."
+
+---
+
+### Script 39: The Agency Scaling Secret
+*   **Visual Cues:** Hold up both hands, spreading your fingers to represent multiple team members or clients.
+*   **Problem Solved:** Agencies struggling to manage and report on client bio-link funnels.
+*   **Why They Need It:** Provides a unified multi-client dashboard with white-labeled reporting capabilities.
+> "If you manage social media clients... listen closely. [PAUSE]
+>
+> Managing thirty different link trees under different client logins is an operational nightmare.
+>
+> KnotBio's Empire Scale tier lets you manage unlimited profiles under one single master dashboard.
+>
+> You get complete white-labeled domain options and real-time client analytics reports.
+>
+> Scale your agency operations. Sell premium brand authority to your clients.
+>
+> Join the Empire. Go to KnotBio.com."
+
+---
+
+### Script 40: The Ultimate Leverage
+*   **Visual Cues:** Spread your hands slowly apart as if expanding an empire.
+*   **Problem Solved:** Failing to turn organic social traffic into tangible, structured business assets.
+*   **Why They Need It:** Establishes a highly efficient, professional, automated lead generation funnel.
+> "The ultimate leverage in business is ownership of your distribution. [PAUSE]
+>
+> Social media algorithm spikes come and go.
+>
+> But your database... your newsletter list... your personal brand... those are yours forever.
+>
+> KnotBio is the bridge that turns temporary social hype into long-term enterprise value.
+>
+> It's not a link-in-bio. It is your strategic command center.
+>
+> It's time to build your empire.
 >
 > Go to KnotBio.com."
 
